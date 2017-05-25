@@ -1,0 +1,46 @@
+{extend name="base" /}
+{block name='css'}
+<style>
+.l-text-wrapper{width:168px;float:left;}
+.tbr-h{height:30px;line-height:30px;}
+body{overflow: hidden;}
+#wst-tabs .l-tab-links li.l-selected a{
+	color: #333 !important;
+}
+.l-tab-links li.l-selected{background: none !important;width: initial;}
+</style>
+{/block}
+{block name="js"}
+<script src="__ADMIN__/configure/logmoneys.js?v={$v}" type="text/javascript"></script>
+{/block}
+{block name="main"}
+<div class="l-loading" style='display:block' id="wst-loading"></div>
+   <div class="wst-toolbar" style="height: 60px;font-size: 20px;line-height: 20px;">
+   	<button class="shanchu" onclick="javascript:toBatchDelB1(0,0)" >删除</button>
+  <span style="color: #333;vertical-align: middle;">当前仓库：{$roles.roleName}</span>
+  <button class="btn btn-gray f-right" style='margin-top: 3px'onclick="javascript:history.go(-1)">返回</button> 
+  <div>
+    <select id="supplier"  style="font-size: 14px; width: 80px;">
+      <option value="0" >请选择</option>
+      {volist name="supplier" id="vo" }
+       <option value="{$vo.id}" >{$vo.company}</option>
+      {/volist}
+    </select>
+  </div>
+  <div style='clear: both'></div>
+  </div>
+   <div id='moneyGrid'></div>
+ 
+<script>
+	
+  $(function(){
+  	$(function(){moneyGridInitB({$roles.roleId},'');})
+  	})
+</script>
+<script type="text/javascript">
+  $("#supplier").change(function(){
+      var id=$('#supplier').val();
+      moneyGridInitB({$roles.roleId},id);
+      });
+</script>
+{/block}

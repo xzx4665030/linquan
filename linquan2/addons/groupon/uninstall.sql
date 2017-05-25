@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS `lqsj_groupons`;
+delete from `lqsj_datas` where dataVal='GROUPON_GOODS_ALLOW';
+delete from `lqsj_datas` where dataVal='GROUPON_GOODS_REJECT';
+delete from `lqsj_datas` where dataVal='WX_GROUPON_GOODS_ALLOW';
+delete from `lqsj_datas` where dataVal='WX_GROUPON_GOODS_REJECT';
+delete from `lqsj_template_msgs` where tplCode='GROUPON_GOODS_ALLOW';
+delete from `lqsj_template_msgs` where tplCode='GROUPON_GOODS_REJECT';
+delete from `lqsj_template_msgs` where tplCode='WX_GROUPON_GOODS_ALLOW';
+delete from `lqsj_template_msgs` where tplCode='WX_GROUPON_GOODS_REJECT';
+delete from `lqsj_navs` where navUrl='index.php/addon/groupon-goods-lists.html';

@@ -1,0 +1,573 @@
+var ugrid,sgrid,mgrid,h;
+$(function(){
+//	alert(1);
+	var flag = true;
+	var flagx = true;
+	var flagy = true;
+	h = WST.pageHeight();
+
+	$('.l-tab-content').height(h-75);
+	$('.l-tab-content-item').height(h-75);
+	$('.l-tab-content-item').css('overflow','hidden');
+	$(window).resize(function(){
+		h = WST.pageHeight();
+		$('.l-tab-content').height(h-72);
+		$('.l-tab-content-item').height(h-72);
+		AuserGridInit();
+		AshopGridInit();
+		AshopGridInitX();
+		AshopGridInitY();
+	})
+	var tab = $("#wst-tabs").ligerTab({
+         height: '99%',
+         changeHeightOnResize:true,
+         showSwitchInTab : false,
+         showSwitch: false,
+         onAfterSelectTabItem:function(n){
+           if(n=='shops'){
+              if(flag){
+                shopGridInit();
+                flag = false;
+              }
+           }else if(n=='shopsx'){
+           		if(flagx){
+                shopGridInitX();
+                flagx = false;
+              }
+           }else if(n=='shopsy'){
+           		if(flagy){
+                shopGridInitY();
+                flagy = false;
+              }
+           }
+         }
+    })
+    userGridInit();
+})
+function userGridInit(){
+	$("#startDateA").ligerDateEditor();
+	$("#endDateA").ligerDateEditor();
+	ugrid = $("#userGrid").ligerGrid({
+		url:WST.U('admin/configure/pageQueryByShop'),
+		pageSize:WST.pageSize,
+		pageSizeOptions:WST.pageSizeOptions,
+		height:h-131,
+        width:'100%',
+        minColToggle:7,
+        rownumbers:true,
+        columns: [
+	        { display: '<p class="quanxuan"><input type="checkbox" style="display:none;" id="chk_x1" onclick="WST.checkChks(this,\'.chk_x1\')"/><label for="chk_x1">全选</label></p>', name: 'checkbox1',width: 60,isSort: false,render: function (){
+	        	return '<input type="checkbox" class="chk_x1" />';
+	        }},
+	        { display: '店铺名称', name: 'shopName',isSort: false},
+	        { display: '联系人', name: 'shopkeeper',isSort: false},
+	        { display: '联系方式', name: 'telephone',isSort: false},
+	        { display: '店铺地址', name: 'shopAddress',isSort: false},
+	        { display: '操作', name: 'op',width: 150,isSort: false,render: function (rowdata, rowindex, value){
+	        	return '<a class="bianji" href="javascript:getForEditA(1,'+rowdata['shopId']+')">编辑</a><a class="kucun">库存</a><a class="shanchux"  href="javascript:toDelA('+rowdata['shopId']+')">删除</a>';
+	        }}
+        ]
+    });
+}
+
+
+function toDelA(id){
+	var box = WST.confirm({content:"您确定要删除该网店吗?",yes:function(){
+	           var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           	$.post(WST.U('admin/configure/del_shop'),{id:id},function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg(json.msg,{icon:1});
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			    	WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+	            }});
+}
+
+//批量删除
+function toBatchDelA(){
+	var ids = WST.getChks('.chk1');
+	if(ids.length==0){
+		 WST.msg('请选择要删除的文章',{icon:2});
+		 return;
+	}
+	var box = WST.confirm({content:"您确定要删除这些文章吗?",yes:function(){
+	           var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           $.post(WST.U('admin/articles/delByBatch'),{ids:ids.join(',')},function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg(json.msg,{icon:1});
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			    	WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+	            }});
+}
+
+
+
+//lif
+function getForEditA(se,id){
+	
+	 var loading = WST.msg('正在获取数据，请稍后...', {icon: 16,time:60000});
+     $.post(WST.U('admin/express/get'),{id:id},function(data,textStatus){
+           layer.close(loading);
+           var json = WST.toAdminJson(data);
+           console.log(json.expressId);
+           if(json.expressId){
+           		WST.setValues(json);
+           		toEditA(se,json.expressId);
+           }else{
+           		WST.msg(json.msg,{icon:2});
+           }
+    });
+}
+//  弹窗
+function toEditA(se,id){
+	var title =(se==0)?"新增":"编辑";
+	var box = WST.open({title:title,type:1,content:$('#expressBoxA'),area: ['430px', 'auto'],btn:['确定','取消'],yes:function(){
+		$('#expressFormA').submit();
+	}});
+	/*
+	$('#expressFormA').validator({
+//      fields: {
+//          expressName: {
+//          	rule:"required;",
+//          	msg:{required:"快递名称不能为空"},
+//          	tip:"请输入快递名称",
+//          	ok:"",
+//          }
+//      },
+       valid: function(form){
+		        var params = WST.getParams('.ipt');
+	                params.expressId = id;
+	                var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           		$.post(WST.U('admin/express/'+((id==0)?"add":"edit")),params,function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg("操作成功",{icon:1});
+	           			    	$('#expressFormA')[0].reset();
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			        WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+
+    	}
+
+  });*/
+
+}
+
+
+
+//第二个
+function AuserGridInit(){
+	ugrid = $("#userGrid").ligerGrid({
+		height:h-131,
+    });
+}
+
+function shopGridInit(){
+	$("#startDateB").ligerDateEditor();
+	$("#endDateB").ligerDateEditor();
+	sgrid = $("#shopGrid").ligerGrid({
+		url:WST.U('admin/logmoneys/pageQueryByShop'),
+		pageSize:WST.pageSize,
+		pageSizeOptions:WST.pageSizeOptions,
+		height:h-131,
+        width:'100%',
+        minColToggle:8,
+        rownumbers:true,
+        columns: [
+        	{ display: '<p class="quanxuan"><input type="checkbox" style="display:none;" id="chk_x2" onclick="WST.checkChks(this,\'.chk_x2\')"/><label for="chk_x2">全选</label></p>', name: 'checkbox2',width: 60,isSort: false,render: function (){
+	        	return '<input type="checkbox" class="chk_x2" />';
+	        }},
+	        { display: '仓库名称', name: 'loginName',isSort: false},
+	        { display: '分组', name: 'shopName',isSort: false},
+	        { display: '管理人', name: 'shopMoney',isSort: false},
+	        { display: '联系方式', name: 'lockMoney',isSort: false},
+	        { display: '添加时间', name: 'lockMoney',isSort: false},
+	        { display: '状态', name: 'lockMoney',isSort: false},
+	        { display: '操作', name: 'op',width: 150,isSort: false,render: function (rowdata, rowindex, value){
+	        	return '<a class="bianji" href="javascript:getForEditB(1,'+rowdata['shopId']+')">编辑</a><a class="kucun">库存</a><a class="shanchux"  href="javascript:toDelB('+rowdata['userId']+')">删除</a>';
+	        }}
+        ]
+    });
+}
+function AshopGridInit(){
+	sgrid = $("#shopGrid").ligerGrid({
+		height:h-131,
+    });
+}
+
+
+
+function toDelB(id){
+	var box = WST.confirm({content:"您确定要删除该文章吗?",yes:function(){
+	           var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           	$.post(WST.U('admin/articles/del'),{id:id},function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg(json.msg,{icon:1});
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			    	WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+	            }});
+}
+
+//批量删除
+function toBatchDelB(){
+	var ids = WST.getChks('.chk2');
+	if(ids.length==0){
+		 WST.msg('请选择要删除的文章',{icon:2});
+		 return;
+	}
+	var box = WST.confirm({content:"您确定要删除这些文章吗?",yes:function(){
+	           var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           $.post(WST.U('admin/articles/delByBatch'),{ids:ids.join(',')},function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg(json.msg,{icon:1});
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			    	WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+	            }});
+}
+
+
+//
+function getForEditB(se,id){
+	 var loading = WST.msg('正在获取数据，请稍后...', {icon: 16,time:60000});
+     $.post(WST.U('admin/express/get'),{id:id},function(data,textStatus){
+           layer.close(loading);
+           var json = WST.toAdminJson(data);
+           console.log(json.expressId);
+           if(json.expressId){
+           		WST.setValues(json);
+           		toEditB(se,json.expressId);
+           }else{
+           		WST.msg(json.msg,{icon:2});
+           }
+    });
+}
+//  弹窗
+function toEditB(se,id){
+	var title =(se==0)?"新增":"编辑";
+	var box = WST.open({title:title,type:1,content:$('#expressBoxB'),area: ['430px', 'auto'],btn:['确定','取消'],yes:function(){
+		$('#expressFormB').submit();
+	}});
+	$('#expressFormB').validator({
+//      fields: {
+//          expressName: {
+//          	rule:"required;",
+//          	msg:{required:"快递名称不能为空"},
+//          	tip:"请输入快递名称",
+//          	ok:"",
+//          }
+//      },
+       valid: function(form){
+		        var params = WST.getParams('.ipt');
+	                params.expressId = id;
+	                var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           		$.post(WST.U('admin/express/'+((id==0)?"add":"edit")),params,function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg("操作成功",{icon:1});
+	           			    	$('#expressFormB')[0].reset();
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			        WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+
+    	}
+
+  });
+
+}
+
+
+
+//第三个
+function shopGridInitX(){
+	
+	$("#startDateC").ligerDateEditor();
+	$("#endDateC").ligerDateEditor();
+	sgridY = $("#shopGridx").ligerGrid({
+		url:WST.U('admin/logmoneys/pageQueryByShop'),
+		pageSize:WST.pageSize,
+		pageSizeOptions:WST.pageSizeOptions,
+		height:h-131,
+        width:'100%',
+        minColToggle:9,
+        rownumbers:true,
+        columns: [
+	       { display: '<p class="quanxuan"><input type="checkbox" style="display:none;" id="chk_x3" onclick="WST.checkChks(this,\'.chk_x3\')"/><label for="chk_x3">全选</label></p>', name: 'checkbox3',width: 60,isSort: false,render: function (){
+	        	return '<input type="checkbox" class="chk_x3" />';
+	        }},
+	        { display: '编号', name: 'loginName',isSort: false},
+	        { display: '商品名称', name: 'shopName',isSort: false},
+	        { display: '添加时间', name: 'shopMoney',isSort: false},
+	        { display: '数量', name: 'lockMoney',isSort: false},
+	        { display: '规格', name: 'lockMoney',isSort: false},
+	        { display: '进价', name: 'lockMoney',isSort: false},
+	        { display: '市场价', name: 'lockMoney',isSort: false},
+	        { display: '操作', name: 'op',width: 150,isSort: false,render: function (rowdata, rowindex, value){
+	        	return '<a class="bianji" href="javascript:getForEditC(1,'+rowdata['shopId']+')">编辑</a><a class="kucun">库存</a><a class="shanchux"  href="javascript:toDelC('+rowdata['userId']+')">删除</a>';
+	        }}
+        ]
+    });
+}
+function AshopGridInitX(){
+	sgridY = $("#shopGridx").ligerGrid({
+		height:h-131,
+    });
+}
+
+
+function toDelC(id){
+	var box = WST.confirm({content:"您确定要删除该文章吗?",yes:function(){
+	           var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           	$.post(WST.U('admin/articles/del'),{id:id},function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg(json.msg,{icon:1});
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			    	WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+	            }});
+}
+
+//批量删除
+function toBatchDelC(){
+	var ids = WST.getChks('.chk3');
+	if(ids.length==0){
+		 WST.msg('请选择要删除的文章',{icon:2});
+		 return;
+	}
+	var box = WST.confirm({content:"您确定要删除这些文章吗?",yes:function(){
+	           var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           $.post(WST.U('admin/articles/delByBatch'),{ids:ids.join(',')},function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg(json.msg,{icon:1});
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			    	WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+	            }});
+}
+
+
+
+//
+function getForEditC(se,id){
+	
+	 var loading = WST.msg('正在获取数据，请稍后...', {icon: 16,time:60000});
+     $.post(WST.U('admin/express/get'),{id:id},function(data,textStatus){
+           layer.close(loading);
+           var json = WST.toAdminJson(data);
+           console.log(json.expressId);
+           if(json.expressId){
+           		WST.setValues(json);
+           		toEditC(se,json.expressId);
+           }else{
+           		WST.msg(json.msg,{icon:2});
+           }
+    });
+}
+//  弹窗
+function toEditC(se,id){
+	var title =(se==0)?"新增":"编辑";
+	var box = WST.open({title:title,type:1,content:$('#expressBoxC'),area: ['690px', 'auto'],btn:['确定','取消'],yes:function(){
+		$('#expressFormC').submit();
+	}});
+	$('#expressFormC').validator({
+//      fields: {
+//          expressName: {
+//          	rule:"required;",
+//          	msg:{required:"快递名称不能为空"},
+//          	tip:"请输入快递名称",
+//          	ok:"",
+//          }
+//      },
+       valid: function(form){
+		        var params = WST.getParams('.ipt');
+	                params.expressId = id;
+	                var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           		$.post(WST.U('admin/express/'+((id==0)?"add":"edit")),params,function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg("操作成功",{icon:1});
+	           			    	$('#expressFormC')[0].reset();
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			        WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+
+    	}
+
+  });
+
+}
+
+
+
+
+
+//第四个
+function shopGridInitY(){
+	$("#startDateD").ligerDateEditor();
+	$("#endDateD").ligerDateEditor();
+	sgridY = $("#shopGridy").ligerGrid({
+		url:WST.U('admin/logmoneys/pageQueryByShop'),
+		pageSize:WST.pageSize,
+		pageSizeOptions:WST.pageSizeOptions,
+		height:h-131,
+        width:'100%',
+        minColToggle:4,
+        rownumbers:true,
+        columns: [
+	       { display: '<p class="quanxuan"><input type="checkbox" style="display:none;" id="chk_x4" onclick="WST.checkChks(this,\'.chk_x4\')"/><label for="chk_x4">全选</label></p>', name: 'checkbox4',width: 60,isSort: false,render: function (){
+	        	return '<input type="checkbox" class="chk_x4" />';
+	        }},
+	        { display: '分组名称', name: 'loginName',isSort: false},
+	        { display: '排序', name: 'shopName',isSort: false},
+	        { display: '操作', name: 'op',width: 80,isSort: false,render: function (rowdata, rowindex, value){
+	        	
+	        	return '<a class="bianji" href="javascript:getForEditD(1,'+rowdata['shopId']+')">编辑</a>';
+//	        	return '<a href="javascript:tologmoneys(1,'+rowdata['shopId']+')">查看</a>&nbsp;&nbsp;&nbsp;<a href="javascript:tologmoneys(1,'+rowdata['shopId']+')">caozu</a>';
+	        }}
+        ]
+    });
+}
+function AshopGridInitY(){
+	sgridY = $("#shopGridy").ligerGrid({
+		height:h-131,
+    });
+}
+
+
+
+function toDelD(id){
+	var box = WST.confirm({content:"您确定要删除该文章吗?",yes:function(){
+	           var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           	$.post(WST.U('admin/articles/del'),{id:id},function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg(json.msg,{icon:1});
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			    	WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+	            }});
+}
+
+//批量删除
+function toBatchDelD(){
+	var ids = WST.getChks('.chk4');
+	if(ids.length==0){
+		 WST.msg('请选择要删除的文章',{icon:2});
+		 return;
+	}
+	var box = WST.confirm({content:"您确定要删除这些文章吗?",yes:function(){
+	           var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           $.post(WST.U('admin/articles/delByBatch'),{ids:ids.join(',')},function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg(json.msg,{icon:1});
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			    	WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+	            }});
+}
+
+
+
+//
+function getForEditD(se,id){
+	 var loading = WST.msg('正在获取数据，请稍后...', {icon: 16,time:60000});
+     $.post(WST.U('admin/configure/get_group'),{id:id},function(data,textStatus){
+           layer.close(loading);
+           var json = WST.toAdminJson(data);
+           console.log(json.expressId);
+           if(json.expressId){
+           		WST.setValues(json);
+           		toEditD(se,json.expressId);
+           }else{
+           		WST.msg(json.msg,{icon:2});
+           }
+    });
+}
+//  弹窗
+function toEditD(se,id){
+	var title =(se==0)?"新增":"编辑";
+	var box = WST.open({title:title,type:1,content:$('#expressBoxD'),area: ['430px', 'auto'],btn:['确定','取消'],yes:function(){
+		$('#expressFormD').submit();
+	}});
+	$('#expressFormD').validator({
+//      fields: {
+//          expressName: {
+//          	rule:"required;",
+//          	msg:{required:"快递名称不能为空"},
+//          	tip:"请输入快递名称",
+//          	ok:"",
+//          }
+//      },
+       valid: function(form){
+		        var params = WST.getParams('.iptd');
+	                
+	                var loading = WST.msg('正在提交数据，请稍后...', {icon: 16,time:60000});
+	           		$.post(WST.U('admin/configure/'+((id==0)?"add_group":"edit_group")),params,function(data,textStatus){
+	           			  layer.close(loading);
+	           			  var json = WST.toAdminJson(data);
+	           			  if(json.status=='1'){
+	           			    	WST.msg("操作成功",{icon:1});
+	           			    	$('#expressFormD')[0].reset();
+	           			    	layer.close(box);
+	           		            grid.reload();
+	           			  }else{
+	           			        WST.msg(json.msg,{icon:2});
+	           			  }
+	           		});
+    	}
+  });
+}
+

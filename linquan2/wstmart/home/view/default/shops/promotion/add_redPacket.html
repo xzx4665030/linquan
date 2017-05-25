@@ -1,0 +1,63 @@
+{extend name="default/shops/base" /}
+{block name="title"}红包{__block__}{/block}
+{block name="css"}
+{/block}
+{block name="content"}
+  <div class="wst-shop-head"><span>添加红包</span></div>
+  
+	<form method="post" action="{:url('home/shops/save_redPacket')}" enctype="multipart/form-data">
+		红包有效期：<input type='text' class="laydate-icon j-ipt" id='startDate' onclick="laydate()" value='{$startDate}' name="startDate"/>至
+		<input type='text' class="laydate-icon j-ipt" id='endDate' onclick="laydate()" value='{$endDate}' name="endDate"/><br />
+		红包名称：<input type="text" name="redPacket_name"><br />
+		红包数量：<input type="text" name="redPacket_num"><br />
+		红包金额：<input type="text" name="redPacket_value"><br />
+		红包图片：
+		<img src="http://f7-preview.awardspace.com/zjmainstay.co.cc/jQueryExample/jquery_upload_image/files/addfile.jpg" onclick="getElementById('inputfile').click()" title="点击添加图片" alt="点击添加图片">
+		<input type="file" name="image" style="opacity:0;filter:alpha(opacity=0);" id="inputfile"/>
+		<img src="" id="show_img">
+		<input type="hidden" name="redPacket_img" id="redPacket_img">
+		<br />
+		<input type="hidden" name="redPacket_flag" value="3">
+		<input type="hidden" name="state" value="0">		
+		<input type="submit" value="提交">
+	</form>
+{/block}
+{block name="js"}
+<script src="__STATIC__/plugins/layer/laydate.js"></script>
+<script>
+$(function(){
+	$("#inputfile").change(function(){
+        //创建FormData对象
+        var data = new FormData();
+        //为FormData对象添加数据
+        $.each($('#inputfile')[0].files, function(i, file) {
+            data.append('upload_file', file);
+        });
+		
+		data.append('flag',3);   //加个参数，好进行封装
+		
+        $.ajax({
+            url:WST.U('home/shops/file_img'),
+            type:'post',
+            data:data,
+			dataType: "json",
+            cache: false,
+            contentType: false,    //不可缺
+            processData: false,    //不可缺
+            success:function(data){               
+				if(data.res == '2'){
+					//console.log(data.msg);
+					var url = WST.conf.ROOT+'/'+data.msg;
+					$("#show_img").attr('src',url);
+					$("#redPacket_img").val(data.msg);
+					WST.msg('上传图片成功');
+				}else{
+					WST.msg(data.msg);
+				}
+            }
+        });
+    });
+})
+
+</script>
+{/block}

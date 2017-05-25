@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS `lqsj_third_users`;

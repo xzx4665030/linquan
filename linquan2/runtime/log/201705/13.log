@@ -1,0 +1,4720 @@
+[ 2017-05-13T00:36:48+08:00 ] 10.105.123.228 183.57.53.222 GET /index.php/home/index/getSysMessages.html
+[ log ] lqsc.ahxiaodian.com/index.php/home/index/getSysMessages.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,965.93kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'getSysMessages',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Index->getSysMessages[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error： array[D:\phpStudy\WWW\linquan2\thinkphp\library\think\Response.php:310]
+
+---------------------------------------------------------------
+[ 2017-05-13T01:45:29+08:00 ] 10.105.123.228 183.57.53.177 GET /linquan2/index.php/shop/chat/chat_list?token%253DMjA%253D%2526orderId%253D22%2526page%253D1%2526type%253D1%2526click%253D0%2526goodsId%253D66%2526time%253D2017-5-2%2526discount_id%253D5%2526name%253Dtest%2526tel%253D15255111111%2526card%253D123456789987654321%2526number%253D15255111111%2526bank_id%253D17%2526hold_name%253Dtest%2526card_num%253D1111222233334444%2526id%253D2%2526money%253D1
+[ log ] 115.159.111.127/linquan2/index.php/shop/chat/chat_list?token%253DMjA%253D%2526orderId%253D22%2526page%253D1%2526type%253D1%2526click%253D0%2526goodsId%253D66%2526time%253D2017-5-2%2526discount_id%253D5%2526name%253Dtest%2526tel%253D15255111111%2526card%253D123456789987654321%2526number%253D15255111111%2526bank_id%253D17%2526hold_name%253Dtest%2526card_num%253D1111222233334444%2526id%253D2%2526money%253D1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,188.52kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'chat',
+    2 => 'chat_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+  'token%3DMjA%3D%26orderId%3D22%26page%3D1%26type%3D1%26click%3D0%26goodsId%3D66%26time%3D2017-5-2%26discount_id%3D5%26name%3Dtest%26tel%3D15255111111%26card%3D123456789987654321%26number%3D15255111111%26bank_id%3D17%26hold_name%3Dtest%26card_num%3D1111222233334444%26id%3D2%26money%3D1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Chat.php:13]
+
+---------------------------------------------------------------
+[ 2017-05-13T02:08:04+08:00 ] 10.105.123.228 183.57.53.222 GET /index.php/admin/mobile/index.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/mobile/index.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,572.45kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T02:08:04+08:00 ] 10.105.123.228 183.57.53.222 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,418.45kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/index.php/admin/mobile/index.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T02:17:45+08:00 ] 10.105.123.228 183.57.53.197 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,418.20kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T03:15:21+08:00 ] 10.105.123.228 183.57.53.197 GET /index.php/admin/index/getVersion.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/getVersion.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,540.57kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getVersion',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T03:15:21+08:00 ] 10.105.123.228 183.57.53.197 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,418.44kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/index.php/admin/index/getVersion.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T08:38:17+08:00 ] 10.105.123.228 183.57.53.196 GET /admin/mobile/get_item.html
+[ log ] lqsc.ahxiaodian.com/admin/mobile/get_item.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,575.58kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'get_item',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T08:38:17+08:00 ] 10.105.123.228 183.57.53.196 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,421.44kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/mobile/get_item.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T08:39:20+08:00 ] 10.105.123.228 183.57.53.197 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：2,418.12kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T11:05:13+08:00 ] 10.105.123.228 101.226.68.215 GET /index.php/admin/mobile/add_img.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/mobile/add_img.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,572.58kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'add_img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T11:05:13+08:00 ] 10.105.123.228 101.226.68.215 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,418.45kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/index.php/admin/mobile/add_img.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T11:34:15+08:00 ] 10.105.123.228 183.57.53.197 GET /index.php/admin/mobile/xxx
+[ log ] lqsc.ahxiaodian.com/index.php/admin/mobile/xxx [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,573.02kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'xxx',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T12:50:39+08:00 ] 10.105.123.228 183.57.53.196 GET /admin/mobile/get_item.html
+[ log ] lqsc.ahxiaodian.com/admin/mobile/get_item.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,575.58kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'get_item',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T12:50:39+08:00 ] 10.105.123.228 112.90.82.218 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,418.12kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T12:50:40+08:00 ] 10.105.123.228 183.57.53.196 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：2,421.44kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/mobile/get_item.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:15+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.140625s][吞吐率：7.11req/s] [内存消耗：1,831.97kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:20+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=2
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=2 [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：1,826.60kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'today_order_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+  'type' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->today_order_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:22+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/sale_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/sale_list?token=MjA=&page=1 [运行时间：0.109375s][吞吐率：9.14req/s] [内存消耗：1,842.86kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'sale_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->sale_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:24+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=3
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=3 [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：1,825.95kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'today_order_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+  'type' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->today_order_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:29+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:30+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=4
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=4 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,798.45kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'today_order_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+  'type' => '4',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->today_order_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: where[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:108]
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:35+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/goods_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,789.03kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:38+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/goods_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,789.03kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:39+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/goods_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,789.03kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:55:57+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/goods_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,789.03kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:56:45+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/goods_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,789.03kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:59:20+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.015625s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T15:59:23+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/shop_manage?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/shop_manage?token=MjA= [运行时间：0.093750s][吞吐率：10.67req/s] [内存消耗：1,723.87kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'shop_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->shop_manage[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:19:40+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,831.97kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:19:46+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/shop_manage?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/shop_manage?token=MjA= [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：1,723.87kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'shop_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->shop_manage[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:19:53+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/shop_manage?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/shop_manage?token=MjA= [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,723.87kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'shop_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->shop_manage[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:19:57+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,787.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:19:59+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,787.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:20:02+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,787.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:53:01+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:53:04+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/shop_manage?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/shop_manage?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,723.87kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'shop_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->shop_manage[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:53:08+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,787.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:53:10+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,787.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:53:12+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:54:32+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:54:35+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:55:58+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:56:52+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:57:54+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T16:58:30+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,817.50kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:01:14+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:01:23+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:05:17+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:05:22+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:08:01+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.140625s][吞吐率：7.11req/s] [内存消耗：1,831.97kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:08:03+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.093750s][吞吐率：10.67req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:08:05+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:08:06+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:08:07+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:08:08+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.093750s][吞吐率：10.67req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:08:09+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:08:21+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.093750s][吞吐率：10.67req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:09:18+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.093750s][吞吐率：10.67req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:28:07+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：1,831.97kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:28:12+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:28:15+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:28:37+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:28:44+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:28:47+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:28:59+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:29:03+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:29:45+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:30:18+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:02+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：1,831.97kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:26+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:31+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:32+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:33+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:33+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:34+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:34+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:34+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:34+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:35+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:35+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:35+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:36+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:36+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:37+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:37+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:37+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:37+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:37+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:38+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:38+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:38+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:38+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:40:58+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:43:11+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:43:53+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/do_replay_value?token=MjA=&orderId=22&content=%E5%85%94%E5%85%94%E5%85%94 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,796.32kb] [文件加载：51]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'do_replay_value',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '22',
+  'content' => '兔兔兔',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->do_replay_value[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: time[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:535]
+
+---------------------------------------------------------------
+[ 2017-05-13T17:44:04+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：1,831.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:45:47+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.109375s][吞吐率：9.14req/s] [内存消耗：1,787.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:45:51+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/shop_manage?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/shop_manage?token=MjA= [运行时间：0.109375s][吞吐率：9.14req/s] [内存消耗：1,723.87kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'shop_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->shop_manage[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T17:45:55+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token=MjA=&page=1 [运行时间：0.093750s][吞吐率：10.67req/s] [内存消耗：1,817.48kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->order_value_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:20:46+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：1,787.18kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:20:50+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/shop_manage?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/shop_manage?token=MjA= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,723.87kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'shop_manage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->shop_manage[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:20:54+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=3
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=3 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,825.95kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'today_order_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+  'type' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->today_order_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:20:58+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/sale_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/sale_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,842.86kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'sale_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->sale_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:21:02+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,787.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:24:12+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/manage/goods_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,787.19kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'manage',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Manage->goods_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Manage.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:24:17+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=3
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/today_order_list?token=MjA=&page=1&type=3 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,825.95kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'today_order_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+  'type' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->today_order_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T18:24:20+08:00 ] 10.105.123.228 180.168.160.38 GET /linquan2/index.php/shop/index/sale_list?token=MjA=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/sale_list?token=MjA=&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,842.86kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'sale_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->sale_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:22:19+08:00 ] 10.105.123.228 116.227.37.251 GET /linquan2/index.php/shop/index/index?token=MjA=
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/index?token=MjA= [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：1,831.97kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.2.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:32:49+08:00 ] 10.105.123.228 119.147.207.158 GET /linquan2/index.php/shop/index/today_order_list?token%3DMjA%3D%26page%3D1%26type%3D2
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/today_order_list?token%3DMjA%3D%26page%3D1%26type%3D2 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,265.77kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'today_order_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+  'token=MjA=&page=1&type=2' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:13]
+
+---------------------------------------------------------------
+[ 2017-05-13T19:36:29+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/index/index
+[ log ] 115.159.111.127/linquan2/index.php/user/index/index [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：2,469.03kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\user\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:36:40+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/usercenter/index?token=MTMzODE3MzA5MTM=
+[ log ] 115.159.111.127/linquan2/index.php/user/usercenter/index?token=MTMzODE3MzA5MTM= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,823.43kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'usercenter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->index[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:36:42+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/usercenter/userinfo?token=MTMzODE3MzA5MTM=
+[ log ] 115.159.111.127/linquan2/index.php/user/usercenter/userinfo?token=MTMzODE3MzA5MTM= [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,738.57kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'usercenter',
+    2 => 'userinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->userinfo[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:36:59+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/Usercenter/order?token=MTMzODE3MzA5MTM=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/user/Usercenter/order?token=MTMzODE3MzA5MTM=&page=1 [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,307.42kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Usercenter',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->order[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:03+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/Usercenter/order?token=MTMzODE3MzA5MTM=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/user/Usercenter/order?token=MTMzODE3MzA5MTM=&page=1 [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,307.42kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Usercenter',
+    2 => 'order',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->order[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:05+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/Usercenter/keep_good?page=0&token=MTMzODE3MzA5MTM=
+[ log ] 115.159.111.127/linquan2/index.php/user/Usercenter/keep_good?page=0&token=MTMzODE3MzA5MTM= [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,856.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Usercenter',
+    2 => 'keep_good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '0',
+  'token' => 'MTMzODE3MzA5MTM=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->keep_good[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:07+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/Usercenter/keep_shop?page=1&token=MTMzODE3MzA5MTM=
+[ log ] 115.159.111.127/linquan2/index.php/user/Usercenter/keep_shop?page=1&token=MTMzODE3MzA5MTM= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,107.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Usercenter',
+    2 => 'keep_shop',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'token' => 'MTMzODE3MzA5MTM=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->keep_shop[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:07+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/upload/shops/2016-10/57fa2a9dba7c2.jpg
+[ log ] 115.159.111.127/linquan2/upload/shops/2016-10/57fa2a9dba7c2.jpg [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,102.44kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; HUAWEI NXT-DL00 Build/HUAWEINXT-DL00)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:08+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/shop/index?token=MTMzODE3MzA5MTM=&shop_id=1&ordersort=1&orderstatus=1&shopCatId1=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/user/shop/index?token=MTMzODE3MzA5MTM=&shop_id=1&ordersort=1&orderstatus=1&shopCatId1=&page=1 [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,078.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+  'shop_id' => '1',
+  'ordersort' => '1',
+  'orderstatus' => '1',
+  'shopCatId1' => '',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Shop->index[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Shop.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:08+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/shop/index?token=MTMzODE3MzA5MTM=&shop_id=1&ordersort=1&orderstatus=1&shopCatId1=&page=1
+[ log ] 115.159.111.127/linquan2/index.php/user/shop/index?token=MTMzODE3MzA5MTM=&shop_id=1&ordersort=1&orderstatus=1&shopCatId1=&page=1 [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,078.61kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+  'shop_id' => '1',
+  'ordersort' => '1',
+  'orderstatus' => '1',
+  'shopCatId1' => '',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Shop->index[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Shop.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:09+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/shop/good?token=MTMzODE3MzA5MTM=&good_id=1
+[ log ] 115.159.111.127/linquan2/index.php/user/shop/good?token=MTMzODE3MzA5MTM=&good_id=1 [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：1,911.05kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'shop',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+  'good_id' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Shop->good[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Shop.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:16+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/shop/evaluate?token=MTMzODE3MzA5MTM=&good_id=1&page=1
+[ log ] 115.159.111.127/linquan2/index.php/user/shop/evaluate?token=MTMzODE3MzA5MTM=&good_id=1&page=1 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,860.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'shop',
+    2 => 'evaluate',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+  'good_id' => '1',
+  'page' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.015625s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Shop->evaluate[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Shop.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:17+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/
+[ log ] 115.159.111.127/linquan2/ [运行时间：0.421875s][吞吐率：2.37req/s] [内存消耗：2,489.74kb] [文件加载：63]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; HUAWEI NXT-DL00 Build/HUAWEINXT-DL00)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/home\view\default\index.html [ array (
+  0 => 'v',
+  1 => 'floors',
+  2 => 'hideCategory',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cron\Cron @initCronHook [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:25+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/shop/good?token=MTMzODE3MzA5MTM=&good_id=73
+[ log ] 115.159.111.127/linquan2/index.php/user/shop/good?token=MTMzODE3MzA5MTM=&good_id=73 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,906.33kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'shop',
+    2 => 'good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+  'good_id' => '73',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Shop->good[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Shop.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:26+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/Usercenter/keep_good?page=0&token=MTMzODE3MzA5MTM=
+[ log ] 115.159.111.127/linquan2/index.php/user/Usercenter/keep_good?page=0&token=MTMzODE3MzA5MTM= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,856.70kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Usercenter',
+    2 => 'keep_good',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '0',
+  'token' => 'MTMzODE3MzA5MTM=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->keep_good[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:27+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/Usercenter/keep_shop?page=1&token=MTMzODE3MzA5MTM=
+[ log ] 115.159.111.127/linquan2/index.php/user/Usercenter/keep_shop?page=1&token=MTMzODE3MzA5MTM= [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,107.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'Usercenter',
+    2 => 'keep_shop',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'token' => 'MTMzODE3MzA5MTM=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->keep_shop[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:27+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/index/index
+[ log ] 115.159.111.127/linquan2/index.php/user/index/index [运行时间：0.078125s][吞吐率：12.80req/s] [内存消耗：2,469.03kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\user\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:27+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/upload/shops/2016-10/57fa2a9dba7c2.jpg
+[ log ] 115.159.111.127/linquan2/upload/shops/2016-10/57fa2a9dba7c2.jpg [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,102.44kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'upload',
+    1 => 'shops',
+    2 => '2016-10',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'accept-encoding' => 'identity',
+  'user-agent' => 'Dalvik/2.1.0 (Linux; U; Android 7.0; HUAWEI NXT-DL00 Build/HUAWEINXT-DL00)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T19:37:28+08:00 ] 10.105.123.228 223.167.127.22 GET /linquan2/index.php/user/usercenter/index?token=MTMzODE3MzA5MTM=
+[ log ] 115.159.111.127/linquan2/index.php/user/usercenter/index?token=MTMzODE3MzA5MTM= [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,823.43kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'usercenter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'okhttp/3.5.0',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'charset' => 'UTF-8',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MTMzODE3MzA5MTM=',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\user\controller\Usercenter->index[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T22:15:15+08:00 ] 10.105.123.228 101.226.68.215 GET /linquan2/index.php/user/shop/index?token%3DMTMzODE3MzA5MTM%3D%26shop_id%3D1%26ordersort%3D1%26orderstatus%3D1%26shopCatId1%3D%26page%3D1
+[ log ] 115.159.111.127/linquan2/index.php/user/shop/index?token%3DMTMzODE3MzA5MTM%3D%26shop_id%3D1%26ordersort%3D1%26orderstatus%3D1%26shopCatId1%3D%26page%3D1 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,282.38kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+  'token=MTMzODE3MzA5MTM=&shop_id=1&ordersort=1&orderstatus=1&shopCatId1=&page=1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\phpStudy\WWW\linquan2\wstmart\user\controller\Shop.php:14]
+
+---------------------------------------------------------------
+[ 2017-05-13T22:58:34+08:00 ] 10.105.123.228 183.57.53.177 GET /linquan2/index.php/user/usercenter/index?token%3DMTMzODE3MzA5MTM%3D
+[ log ] 115.159.111.127/linquan2/index.php/user/usercenter/index?token%3DMTMzODE3MzA5MTM%3D [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,288.03kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'usercenter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+  'token=MTMzODE3MzA5MTM=' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\phpStudy\WWW\linquan2\wstmart\user\controller\Usercenter.php:13]
+
+---------------------------------------------------------------
+[ 2017-05-13T23:12:32+08:00 ] 10.105.123.228 183.57.53.196 GET /linquan2/index.php/user/index/index
+[ log ] 115.159.111.127/linquan2/index.php/user/index/index [运行时间：0.359375s][吞吐率：2.78req/s] [内存消耗：2,469.48kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\user\controller\Index->index[ D:\phpStudy\WWW\linquan2\wstmart\user\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-13T23:46:55+08:00 ] 10.105.123.228 183.57.53.177 GET /linquan2/index.php/shop/index/order_value_list?token%3DMjA%3D%26page%3D1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/order_value_list?token%3DMjA%3D%26page%3D1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,265.86kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'order_value_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+  'token=MjA=&page=1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:13]
+
+---------------------------------------------------------------

@@ -1,0 +1,31 @@
+{extend name="base" /}
+{block name='css'}
+<style>
+.l-text-wrapper{width:168px;float:left;}
+.tbr-h{height:30px;line-height:30px;}
+body{overflow: hidden;}
+#wst-tabs .l-tab-links li.l-selected a{
+	color: #333 !important;
+}
+.l-tab-links li.l-selected{background: none !important;width: initial;}
+</style>
+{/block}
+{block name="js"}
+<script src="__ADMIN__/configure/logmoneys.js?v={$v}" type="text/javascript"></script>
+{/block}
+{block name="main"}
+<div class="l-loading" style='display:block' id="wst-loading"></div>
+   <div class="wst-toolbar" style="height: 30px;font-size: 20px;line-height: 20px;">
+  <span style="color: #333;vertical-align: middle;">当前网店：{$object['shopName']}</span>
+  <button class="btn btn-gray f-right" style='margin-top: 3px'onclick="javascript:history.go(-1)">返回</button> 
+  <div style='clear: both'></div>
+  </div>
+   <div id='moneyGrid'></div>
+ 
+<script>
+	
+  $(function(){
+  	$(function(){moneyGridInitA({$object['shopId']});})
+  })
+</script>
+{/block}

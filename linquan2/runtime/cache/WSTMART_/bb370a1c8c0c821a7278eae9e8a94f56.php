@@ -1,0 +1,3 @@
+<?php
+//000000086400a:4:{i:0;a:4:{s:6:"shopId";i:5;s:7:"shopImg";s:38:"upload/shops/2016-10/57fa3fd1377e1.jpg";s:8:"shopName";s:27:"乐居家具日用旗舰店";s:5:"catId";i:48;}i:1;a:4:{s:6:"shopId";i:2;s:7:"shopImg";s:38:"upload/shops/2017-05/5912c045c713b.png";s:8:"shopName";s:21:"新鲜鲜果旗舰店";s:5:"catId";i:48;}i:2;a:4:{s:6:"shopId";i:1;s:7:"shopImg";s:38:"upload/shops/2017-05/5912cb0020e51.jpg";s:8:"shopName";s:19:"linquan自营超市";s:5:"catId";i:48;}i:3;a:4:{s:6:"shopId";i:15;s:7:"shopImg";s:38:"upload/shops/2017-05/5913d9e1bbb6f.jpg";s:8:"shopName";s:11:"15255666666";s:5:"catId";i:48;}}
+?>

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:1:{i:0;a:13:{s:8:"shopName";s:21:"新鲜鲜果旗舰店";s:6:"shopId";i:2;s:7:"goodsId";i:4;s:9:"goodsName";s:29:"美国顶级青蛇果4个800g";s:8:"goodsImg";s:38:"upload/shops/2016-10/57f8b434e2549.jpg";s:7:"goodsSn";s:15:"147591677161305";s:10:"goodsStock";i:23241;s:7:"saleNum";i:2;s:9:"shopPrice";s:5:"30.00";s:11:"marketPrice";s:5:"46.00";s:6:"isSpec";i:0;s:11:"appraiseNum";i:0;s:8:"visitNum";i:27;}}
+?>

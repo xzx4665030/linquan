@@ -1,0 +1,1 @@
+alter table `lqsj_users` drop column ucUid;

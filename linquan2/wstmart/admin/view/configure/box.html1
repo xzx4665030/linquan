@@ -1,0 +1,134 @@
+{extend name="base" /}
+
+{block name="js"}
+
+{/block}
+{block name="main"}
+<span id="tianjia" >添加</span>
+<div id="jiaru" style="display:none;position:absolute;">
+	<form ></form>
+</div>
+<form id="userForm" autocomplete="off" >
+<table id="uesrTable">
+	
+</table>
+
+</form>
+<span id="goods_id">{$id}</span>
+<script>
+	var ss;
+	var kk="";
+	var goods_id;
+	$(function(){
+	
+		
+		
+		goods_id = $("#goods_id").text();
+		
+		data = {'goods_id':goods_id};
+		$.ajax({
+			url:WST.U('admin/Supplier/get_spec_cats'),
+			data:data,
+			type:'post',
+			dataType:'json',
+			success:function(data){
+				var len=data.spec_list.length;
+				ss=len;
+				
+				for(var i=0;i<len;i++){
+					//tr=tr+"<td>"+data.spec_list[i].catName+"</td>";
+					kk=kk+"<p>"+data.spec_list[i].catName+"<i>"+data.spec_list[i].catId+"</i><input  type='text'/></p>";
+				}
+				var tr="<tr><td>序号</td><td>规格</td><td style='display:none;'>货号</td><td>市场价</td><td>本店价</td><td>库存</td><td>库存预警</td><td>操作</td></tr>";
+				kk=kk+"<p style='display:none;'>货号<input type='text'/></p><p>市场价<input type='text'/></p><p>本店价<input type='text'/></p><p>库存<input type='text'/></p><p>库存预警<input type='text'/></p><a>确定</a>"
+				
+				for(var j=0;j<data.goods_list.length;j++){
+					tr=tr+'<tr><td>'+(j+1)+'</td><td>'+data.goods_list[j].spec_value+'</td><td>'+data.goods_list[j].marketPrice+'</td><td>'+data.goods_list[j].specPrice+'</td><td>';
+					tr=tr+data.goods_list[j].stock+'</td><td>'+data.goods_list[j].warning+'</td><td><a href="javascript:xiuG('+data.goods_list[j].s_id+')">修改</a>';
+					tr=tr+'<a href="javascript:shanC('+data.goods_list[j].s_id+')">删除</a></td></tr>'
+				}
+					$("#uesrTable").html(tr);				
+			}
+		})
+		$("#tianjia").click(function(){
+			xiuG(0);
+		})
+		
+	})
+	function xiuG(id){
+			
+		$("#jiaru form").html(kk);
+		
+		if(id>0){
+			var data1 = {'id':id};
+			$.ajax({
+				type:'post',
+				data:data1,
+				url:WST.U('admin/Supplier/edit_spec_cats'),
+				dataType:'json',
+				success:function(json){
+					arr=json.spec_value.split(",");
+					var sss=arr.length-1;
+					for(var m=0;m<sss;m++){
+						$("#jiaru form input").eq(m).val(arr[m]);
+					}
+						$("#jiaru form input").eq(sss).val(json.s_huohao);
+						$("#jiaru form input").eq((sss+1)).val(json.marketPrice);
+						$("#jiaru form input").eq((sss+2)).val(json.specPrice);
+						$("#jiaru form input").eq((sss+3)).val(json.stock);
+						$("#jiaru form input").eq((sss+4)).val(json.warning);
+						
+				}
+			})
+		}
+		$("#jiaru").show();
+		$("#jiaru form a").click(function(){
+			var dat1="";
+			var dat2="";
+			for(var k=0;k<ss;k++){
+				dat1 = dat1+$("#jiaru form i").eq(k).text()+",";
+				dat2 = dat2+$("#jiaru form input").eq(k).val()+",";
+			}
+			var dat3 = $("#jiaru form input").eq(ss).val();
+			
+			var dat4 = $("#jiaru form input").eq((ss+1)).val();
+			var dat5 = $("#jiaru form input").eq((ss+2)).val();
+			var dat6 = $("#jiaru form input").eq((ss+3)).val();
+			var dat7 = $("#jiaru form input").eq((ss+4)).val();
+			var datas = {'spec_id':dat1,'spec_value':dat2,'marketPrice':dat4,'shopPrice':dat5,'goodsStock':dat6,'alarm':dat7,'goods_id':goods_id,'id':id};
+			
+			$.ajax({
+				url:WST.U('admin/Supplier/add_spec_cats'),
+				data:datas,
+				type:'post',
+				dataType:'json',
+				success:function(e){
+					if(e.status == 1){
+						alert(e.msg);
+						window.location.reload();
+					}else{
+						alert(e.msg);
+					}
+				}
+			})
+		})
+	}
+	function shanC(id){
+		$.ajax({
+			url:WST.U('admin/Supplier/del_spec_cats'),
+			data:{'id':id},
+			type:'post',
+			dataType:'json',
+			success:function(e){
+				if(e.status == 1){
+					alert(e.msg);
+					window.location.reload();
+				}else{
+					alert(e.msg);
+				}
+			}
+		})
+		
+	}
+</script>
+{/block}

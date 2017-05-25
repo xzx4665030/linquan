@@ -1,0 +1,97 @@
+{extend name="default/shops/base" /}
+{block name="title"}优惠券{__block__}{/block}
+{block name="css"}
+{/block}
+{block name="content"}
+  <div class="wst-shop-head"><span>优惠券列表</span></div>
+  <div class='wst-shop-tbar'>
+     查询内容：<input type='text' class="s-ipt" id='orderNo'/> 
+     
+     <a class="s-btn" onclick="finisedByPage()">查询</a>
+     <!-- <a class="s-btn" style='margin-top:0px;line-height:15px;height:16px;float: right;' onclick="javascript:toExport(2,2,'')">导出</a> -->
+  </div>
+  <a class="s-btn" onclick="loadStat()">新增</a>
+  
+ 
+  <div class='wst-shop-content'>
+    <table class='wst-order-list'>
+       <thead>
+	      <tr class='head'>
+	         <th>序列号</th>
+	         <th>优惠券名称</th>
+	         <th>优惠券数量</th>
+	         <th>最低消费</th>
+			 <th>优惠金额</th>
+			 <th>有效期</th>
+			 <th>操作</th>
+	      </tr>
+	   </thead>
+	   {empty name="list"}
+	    <tr>
+			<td>暂时没有数据……</td>
+		</tr>
+	   {else /}
+	   
+	   <tbody id='loadingBdy'>
+	      {volist name="list" id="lis" key="k"}
+			<tr class='head' style="background-color:#eee">
+				<td>{$k}</td>
+				<td>{$lis.discount_name}</td>
+				<td>{$lis.discount_num}</td>
+				<td>{$lis.discount_consume}</td>
+				<td>{$lis.discount_value}</td>
+				<td>{$lis.discount_startDate|date="Y-m-d",###}—{$lis.discount_endDate|date="Y-m-d",###}</td>
+				<td><a href="{:url('home/shops/edit_promotion',array('id'=>$lis['discount_id']))}">编辑</a>|<a href="{:url('home/shops/delete_promotion',array('id'=>$lis['discount_id']))}">删除</a></td>
+			</tr>
+		  {/volist}
+       </tbody>
+		{/empty}
+       <tr class='empty-row'>
+            <td colspan='4' id='pager' align="center" style='padding:5px 0px 5px 0px'>&nbsp;</td>
+       </tr>
+    </table>
+  </div>
+{/block}
+{block name="js"}
+<script src="__STATIC__/plugins/layer/laydate.js"></script>
+<script>
+$(function(){
+
+})
+function finisedByPage(){
+	var content = $("#orderNo").val();
+	if(content){
+		data = {"data":content};
+		$.ajax({
+			url:WST.U('home/shops/promotion'),
+			data:data,
+			type:'post',
+			dataType:'json',
+			success:function(e){
+				$("#loadingBdy").html("");
+				var html_tr="";
+				for(var k=0;k<e.length;k++){						
+					html_tr=html_tr+'<tr class="head" style="background-color:#eee">';
+					html_tr=html_tr+'<td>'+(k+1)+'</td>';
+					html_tr=html_tr+'<td>'+e[k].discount_name+'</td>';
+					html_tr=html_tr+'<td>'+e[k].discount_num+'</td>';
+					html_tr=html_tr+'<td>'+e[k].discount_consume+'</td>';
+					html_tr=html_tr+'<td>'+e[k].discount_value+'</td>';
+					html_tr=html_tr+'<td>'+e[k].discount_startDate+'—'+e[k].discount_endDate+'</td>';
+					html_tr=html_tr+'<td><a href="/home/shops/edit_promotion.html?id='+e[k].discount_id+'))}">编辑</a>|<a href="/home/shops/delete_promotion.html?id='+e[k].discount_id+'))}">删除</a></td>';
+					html_tr=html_tr+'</tr>';
+				}
+				$("#loadingBdy").html(html_tr);
+			}
+		})
+	}else{
+		window.location.href = WST.U('home/shops/promotion');
+	}
+	
+}
+
+function loadStat(){
+	window.location.href = WST.U('home/shops/add_promotion','flag=1');
+}
+</script>
+{/block}

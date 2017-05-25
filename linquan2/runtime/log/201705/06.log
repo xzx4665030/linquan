@@ -1,0 +1,2405 @@
+[ 2017-05-06T02:45:49+08:00 ] 10.105.123.228 101.226.68.215 GET /index.php/admin/mobile/item_edit.html?id%2525253D1%25252526leibie%2525253D1
+[ log ] lqsc.ahxiaodian.com/index.php/admin/mobile/item_edit.html?id%2525253D1%25252526leibie%2525253D1 [运行时间：0.015624s][吞吐率：64.00req/s] [内存消耗：1,555.96kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'item_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+  'id%25253D1%252526leibie%25253D1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T02:45:49+08:00 ] 10.105.123.228 101.226.68.215 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：2,402.80kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/index.php/admin/mobile/item_edit.html?id%2525253D1%25252526leibie%2525253D1',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T03:20:19+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/configure/sum_goods.html?%253D%2526id%253D8%2526p_id%253D
+[ log ] lqsc.ahxiaodian.com/admin/configure/sum_goods.html?%253D%2526id%253D8%2526p_id%253D [运行时间：0.031249s][吞吐率：32.00req/s] [内存消耗：1,612.51kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'configure',
+    2 => 'sum_goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+  '%3D%26id%3D8%26p_id%3D' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015624s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T03:20:19+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046874s][吞吐率：21.33req/s] [内存消耗：2,405.84kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/configure/sum_goods.html?%253D%2526id%253D8%2526p_id%253D',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T05:33:13+08:00 ] 10.105.123.228 101.226.68.215 GET /index.php/admin/mobile/item_edit.html?id%252525253D1%2525252526leibie%252525253D1
+[ log ] lqsc.ahxiaodian.com/index.php/admin/mobile/item_edit.html?id%252525253D1%2525252526leibie%252525253D1 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,556.04kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'item_edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+  'id%2525253D1%25252526leibie%2525253D1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T05:33:13+08:00 ] 10.105.123.228 101.226.68.215 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,402.95kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/index.php/admin/mobile/item_edit.html?id%252525253D1%2525252526leibie%252525253D1',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T05:33:49+08:00 ] 10.105.123.228 101.226.68.215 GET /admin/mobile/item_index.html?id%3D3
+[ log ] lqsc.ahxiaodian.com/admin/mobile/item_index.html?id%3D3 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,558.86kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'item_index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+  'id=3' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T05:33:49+08:00 ] 10.105.123.228 101.226.68.215 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.84kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/mobile/item_index.html?id%3D3',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T05:33:50+08:00 ] 10.105.123.228 112.90.82.218 GET /home/orders/waitDeliveryByPage.html
+[ log ] lqsc.ahxiaodian.com/home/orders/waitDeliveryByPage.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,968.72kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'orders',
+    2 => 'waitDeliveryByPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T05:33:50+08:00 ] 10.105.123.228 112.90.82.218 GET /login.html
+[ log ] lqsc.ahxiaodian.com/login.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,459.61kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'users',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/home/orders/waitDeliveryByPage.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Users->login[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Users.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/home\view\default\user_login.html [ array (
+  0 => 'v',
+  1 => 'loginName',
+) ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2\addons\thirdlogin\view/home/index/login.html [ array (
+  0 => 'thirdLogins',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\thirdlogin\Thirdlogin @homeDocumentLogin [ RunTime:0.031250s ]
+[ info ] [ BEHAVIOR ] Run \addons\cron\Cron @initCronHook [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T07:17:49+08:00 ] 10.105.123.228 183.57.53.196 GET /admin/configure/sum_goods.html?%25253D%252526id%25253D8%252526p_id%25253D
+[ log ] lqsc.ahxiaodian.com/admin/configure/sum_goods.html?%25253D%252526id%25253D8%252526p_id%25253D [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,612.55kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'configure',
+    2 => 'sum_goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+  '%253D%2526id%253D8%2526p_id%253D' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T07:17:50+08:00 ] 10.105.123.228 183.57.53.196 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.84kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/configure/sum_goods.html?%25253D%252526id%25253D8%252526p_id%25253D',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T08:37:33+08:00 ] 10.105.123.228 112.90.82.218 GET /linquan2/index.php/user/shop/cart?token%3DMTMzODE3MzA5MTM%3D%26good_id%3D1
+[ log ] 115.159.111.127/linquan2/index.php/user/shop/cart?token%3DMTMzODE3MzA5MTM%3D%26good_id%3D1 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,245.88kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'shop',
+    2 => 'cart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+  'token=MTMzODE3MzA5MTM=&good_id=1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\phpStudy\WWW\linquan2\wstmart\user\controller\Shop.php:14]
+
+---------------------------------------------------------------
+[ 2017-05-06T08:45:40+08:00 ] 10.105.123.228 101.226.68.215 GET /admin/shops/index.html
+[ log ] lqsc.ahxiaodian.com/admin/shops/index.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,552.34kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'shops',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T08:45:40+08:00 ] 10.105.123.228 101.226.68.215 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.74kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/shops/index.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T08:48:47+08:00 ] 10.105.123.228 183.57.53.196 GET /linquan2/index.php/user/shop/add_cart?token%253DMTMzODE3MzA5MTM%253D%2526good_id%253D1%2526goodsSpecId%253D30%2526cartNum%253D7
+[ log ] 115.159.111.127/linquan2/index.php/user/shop/add_cart?token%253DMTMzODE3MzA5MTM%253D%2526good_id%253D1%2526goodsSpecId%253D30%2526cartNum%253D7 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,246.06kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => 'shop',
+    2 => 'add_cart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+  'token%3DMTMzODE3MzA5MTM%3D%26good_id%3D1%26goodsSpecId%3D30%26cartNum%3D7' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\phpStudy\WWW\linquan2\wstmart\user\controller\Shop.php:14]
+
+---------------------------------------------------------------
+[ 2017-05-06T09:24:16+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/mobile/pageQueryByMobile.html
+[ log ] lqsc.ahxiaodian.com/admin/mobile/pageQueryByMobile.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,558.49kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'pageQueryByMobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T09:24:16+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.84kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/mobile/pageQueryByMobile.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T09:36:00+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/stock/index.html
+[ log ] lqsc.ahxiaodian.com/admin/stock/index.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,572.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T09:36:00+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/stock/get_stockinfo.html
+[ log ] lqsc.ahxiaodian.com/admin/stock/get_stockinfo.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,572.38kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'get_stockinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T09:36:00+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/reports/statSales.html
+[ log ] lqsc.ahxiaodian.com/admin/reports/statSales.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,540.17kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'reports',
+    2 => 'statSales',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T09:36:00+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.093750s][吞吐率：10.67req/s] [内存消耗：2,405.74kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/stock/index.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T09:36:00+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.82kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/stock/get_stockinfo.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T09:36:00+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,405.86kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/reports/statSales.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:12:12+08:00 ] 10.105.123.228 112.90.82.218 GET /index.php/admin/mobile/pageQueryByMobile.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/mobile/pageQueryByMobile.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,555.59kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'pageQueryByMobile',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:12:12+08:00 ] 10.105.123.228 112.90.82.218 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,402.76kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/index.php/admin/mobile/pageQueryByMobile.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:34:42+08:00 ] 10.105.123.228 183.57.53.196 GET /home/call/waitDeliveryByPage.html
+[ log ] lqsc.ahxiaodian.com/home/call/waitDeliveryByPage.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,250.73kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'call',
+    2 => 'waitDeliveryByPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Call->waitDeliveryByPage[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Call.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error： array[D:\phpStudy\WWW\linquan2\thinkphp\library\think\Response.php:310]
+
+---------------------------------------------------------------
+[ 2017-05-06T10:34:43+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/users/accountindex.html
+[ log ] lqsc.ahxiaodian.com/admin/users/accountindex.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,537.10kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'users',
+    2 => 'accountindex',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:34:43+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.82kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/users/accountindex.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:46:55+08:00 ] 10.105.123.228 101.226.68.215 GET /admin/stock/get_staff.html
+[ log ] lqsc.ahxiaodian.com/admin/stock/get_staff.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,572.39kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'get_staff',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:46:55+08:00 ] 10.105.123.228 101.226.68.215 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.86kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/stock/get_staff.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:46:56+08:00 ] 10.105.123.228 183.57.53.196 GET /home/shops/index.html
+[ log ] lqsc.ahxiaodian.com/home/shops/index.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：2,020.92kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'shops',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:46:56+08:00 ] 10.105.123.228 183.57.53.196 GET /login.html
+[ log ] lqsc.ahxiaodian.com/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,459.61kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'users',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/home/shops/index.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Users->login[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Users.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/home\view\default\user_login.html [ array (
+  0 => 'v',
+  1 => 'loginName',
+) ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2\addons\thirdlogin\view/home/index/login.html [ array (
+  0 => 'thirdLogins',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\thirdlogin\Thirdlogin @homeDocumentLogin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run \addons\cron\Cron @initCronHook [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:51:17+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/mobile/get_item.html
+[ log ] lqsc.ahxiaodian.com/admin/mobile/get_item.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,558.42kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'mobile',
+    2 => 'get_item',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T10:51:17+08:00 ] 10.105.123.228 183.57.53.177 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：2,405.86kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/mobile/get_item.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T11:34:50+08:00 ] 10.105.123.228 183.57.53.222 GET /home/reports/getStatSales.html
+[ log ] lqsc.ahxiaodian.com/home/reports/getStatSales.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,935.31kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'reports',
+    2 => 'getStatSales',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T11:34:50+08:00 ] 10.105.123.228 183.57.53.222 GET /login.html
+[ log ] lqsc.ahxiaodian.com/login.html [运行时间：0.062500s][吞吐率：16.00req/s] [内存消耗：2,459.62kb] [文件加载：67]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'users',
+    2 => 'login',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/home/reports/getStatSales.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Users->login[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Users.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/home\view\default\user_login.html [ array (
+  0 => 'v',
+  1 => 'loginName',
+) ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2\addons\thirdlogin\view/home/index/login.html [ array (
+  0 => 'thirdLogins',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\thirdlogin\Thirdlogin @homeDocumentLogin [ RunTime:0.031250s ]
+[ info ] [ BEHAVIOR ] Run \addons\cron\Cron @initCronHook [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T11:38:34+08:00 ] 10.105.123.228 183.57.53.222 GET /index.php/goods-66.html
+[ log ] lqsc.ahxiaodian.com/index.php/goods-66.html [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：2,789.00kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'goods',
+    2 => 'detail',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '66',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Goods->detail[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/home\view\default\goods_detail.html [ array (
+  0 => 'v',
+  1 => 'goods',
+  2 => 'shop',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cron\Cron @initCronHook [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T11:50:54+08:00 ] 10.105.123.228 183.57.53.197 GET /index.php/home/carts/getCart.html
+[ log ] lqsc.ahxiaodian.com/index.php/home/carts/getCart.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,159.77kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'carts',
+    2 => 'getCart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Carts->getCart[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Carts.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error： array[D:\phpStudy\WWW\linquan2\thinkphp\library\think\Response.php:310]
+
+---------------------------------------------------------------
+[ 2017-05-06T12:04:52+08:00 ] 10.105.123.228 101.226.68.215 GET /linquan2/index.php/shop/index/goods_list?token%253DMjA%253D%2526page%253D1
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/goods_list?token%253DMjA%253D%2526page%253D1 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,273.13kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'goods_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => '115.159.111.127',
+)
+[ info ] [ PARAM ] array (
+  'token%3DMjA%3D%26page%3D1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: token[D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php:13]
+
+---------------------------------------------------------------
+[ 2017-05-06T12:19:08+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.46kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T12:46:50+08:00 ] 10.105.123.228 101.226.68.215 GET /admin/stock/pageQueryByCallOut.html
+[ log ] lqsc.ahxiaodian.com/admin/stock/pageQueryByCallOut.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,572.48kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'stock',
+    2 => 'pageQueryByCallOut',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T12:46:50+08:00 ] 10.105.123.228 101.226.68.215 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：2,405.84kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/stock/pageQueryByCallOut.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T13:12:38+08:00 ] 10.105.123.228 101.226.64.174 GET /home/carts/delCart.html
+[ log ] lqsc.ahxiaodian.com/home/carts/delCart.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：2,163.02kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'carts',
+    2 => 'delCart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Carts->delCart[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Carts.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') )' at line 1[D:\phpStudy\WWW\linquan2\thinkphp\library\think\db\Connection.php:405]
+
+---------------------------------------------------------------
+[ 2017-05-06T13:42:26+08:00 ] 10.105.123.228 183.57.53.196 GET /admin/goods/auditByPage.html
+[ log ] lqsc.ahxiaodian.com/admin/goods/auditByPage.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,537.88kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'auditByPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T13:42:26+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/index/getVersion.html
+[ log ] lqsc.ahxiaodian.com/admin/index/getVersion.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,542.20kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getVersion',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T13:42:26+08:00 ] 10.105.123.228 183.57.53.196 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.86kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/goods/auditByPage.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T13:42:26+08:00 ] 10.105.123.228 112.90.82.218 GET /index.php/admin/Supplier/get_supplier.html?id%3D1
+[ log ] lqsc.ahxiaodian.com/index.php/admin/Supplier/get_supplier.html?id%3D1 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,561.51kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Supplier',
+    2 => 'get_supplier',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+  'id=1' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T13:42:26+08:00 ] 10.105.123.228 112.90.82.218 GET /index.php/admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/index.php/admin/index/login.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：2,402.75kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/index.php/admin/Supplier/get_supplier.html?id%3D1',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T13:42:27+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：2,405.86kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/index/getVersion.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T16:05:47+08:00 ] 10.105.123.228 180.153.206.24 GET /linquan2/index.php/shop/index/sale_list?token=MjA=&orderId=24&page=1&type=3&click=0&goodsId=66&time=2017-5-4
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/sale_list?token=MjA=&orderId=24&page=1&type=3&click=0&goodsId=66&time=2017-5-4 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,851.11kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'sale_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '24',
+  'page' => '1',
+  'type' => '3',
+  'click' => '0',
+  'goodsId' => '66',
+  'time' => '2017-5-4',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->sale_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T16:05:48+08:00 ] 10.105.123.228 101.226.61.207 GET /linquan2/index.php/shop/index/sale_list?token=MjA=&orderId=24&page=1&type=3&click=0&goodsId=66&time=2017-5-4
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/sale_list?token=MjA=&orderId=24&page=1&type=3&click=0&goodsId=66&time=2017-5-4 [运行时间：0.031250s][吞吐率：32.00req/s] [内存消耗：1,851.11kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'sale_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '24',
+  'page' => '1',
+  'type' => '3',
+  'click' => '0',
+  'goodsId' => '66',
+  'time' => '2017-5-4',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->sale_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T16:05:48+08:00 ] 10.105.123.228 61.151.226.16 GET /linquan2/index.php/shop/index/sale_list?token=MjA=&orderId=24&page=1&type=3&click=0&goodsId=66&time=2017-5-4
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/sale_list?token=MjA=&orderId=24&page=1&type=3&click=0&goodsId=66&time=2017-5-4 [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：1,851.13kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'sale_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '24',
+  'page' => '1',
+  'type' => '3',
+  'click' => '0',
+  'goodsId' => '66',
+  'time' => '2017-5-4',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->sale_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T16:05:48+08:00 ] 10.105.123.228 101.226.33.206 GET /linquan2/index.php/shop/index/sale_list?token=MjA=&orderId=24&page=1&type=3&click=0&goodsId=66&time=2017-5-4
+[ log ] 115.159.111.127/linquan2/index.php/shop/index/sale_list?token=MjA=&orderId=24&page=1&type=3&click=0&goodsId=66&time=2017-5-4 [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：1,851.16kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'index',
+    2 => 'sale_list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => '115.159.111.127',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'MjA=',
+  'orderId' => '24',
+  'page' => '1',
+  'type' => '3',
+  'click' => '0',
+  'goodsId' => '66',
+  'time' => '2017-5-4',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] wstmart\shop\controller\Index->sale_list[ D:\phpStudy\WWW\linquan2\wstmart\shop\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T16:47:00+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/templatemsgs/pageSMSQuery.html
+[ log ] lqsc.ahxiaodian.com/admin/templatemsgs/pageSMSQuery.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,536.11kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'templatemsgs',
+    2 => 'pageSMSQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T16:47:00+08:00 ] 10.105.123.228 183.57.53.197 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.84kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/templatemsgs/pageSMSQuery.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T16:47:01+08:00 ] 10.105.123.228 183.57.53.177 GET /selfshop.html
+[ log ] lqsc.ahxiaodian.com/selfshop.html [运行时间：0.140625s][吞吐率：7.11req/s] [内存消耗：2,794.07kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'shops',
+    2 => 'selfshop',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\InitConfig @module_init [ RunTime:0.015625s ]
+[ info ] [ BEHAVIOR ] Run wstmart\home\behavior\ListenProtectedUrl @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\home\controller\Shops->selfShop[ D:\phpStudy\WWW\linquan2\wstmart\home\controller\Shops.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\decoration\Decoration @homeBeforeGoSelfShop [ RunTime:0.015625s ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/home\view\default\self_shop.html [ array (
+  0 => 'v',
+  1 => 'selfShop',
+  2 => 'goodsName',
+  3 => 'data',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cron\Cron @initCronHook [ RunTime:0.000000s ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T20:32:22+08:00 ] 10.105.123.228 119.147.207.158 GET /admin/templatemsgs/pageSMSQuery.html
+[ log ] lqsc.ahxiaodian.com/admin/templatemsgs/pageSMSQuery.html [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：1,536.14kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'templatemsgs',
+    2 => 'pageSMSQuery',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-06T20:32:22+08:00 ] 10.105.123.228 119.147.207.158 GET /admin/index/login.html
+[ log ] lqsc.ahxiaodian.com/admin/index/login.html [运行时间：0.046875s][吞吐率：21.33req/s] [内存消耗：2,405.84kb] [文件加载：61]
+[ info ] [ LANG ] D:\phpStudy\WWW\linquan2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_3_4 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G35 QQ/6.5.3.410 V1_IPH_SQ_6.5.3_1_APP_A Pixel/750 Core/UIWebView NetType/2G Mem/117',
+  'accept-language' => 'zh-cn',
+  'accept' => '*/*',
+  'referer' => 'http://lqsc.ahxiaodian.com/admin/templatemsgs/pageSMSQuery.html',
+  'accept-encoding' => 'deflate, gzip',
+  'host' => 'lqsc.ahxiaodian.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\common\behavior\InitConfig @app_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\InitConfig @module_init [ RunTime:0.000000s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'WSTMART_',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenLoginStatus @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenPrivilege @action_begin [ RunTime:0.000000s ]
+[ info ] [ BEHAVIOR ] Run wstmart\admin\behavior\ListenOperate @action_begin [ RunTime:0.000000s ]
+[ info ] [ RUN ] wstmart\admin\controller\Index->login[ D:\phpStudy\WWW\linquan2\wstmart\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\linquan2/wstmart/admin\view\login.html [ array (
+  0 => 'v',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

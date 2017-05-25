@@ -1,0 +1,393 @@
+{extend name="base" /} {block name='css'}
+<style>
+	
+</style>
+{/block} {block name="js"}
+<script src="__ADMIN__/finance/logmoneys.js?v={$v}" type="text/javascript"></script>
+<script src="__ADMIN__/finance/echarts.js?v={$v}" type="text/javascript"></script>
+{/block} {block name="main"}
+<style type="text/css">
+	body {
+		overflow: hidden
+	}
+	.wst-toolbar{
+		border-top: 1px solid #f4f4f4;
+	}
+	.quanxuan label{display:block;width: 100%;height: 100%;background: #88b547;color: #fff;cursor: pointer;}
+	#wst-tabs .l-tab-links,.wst-toolbar{
+		background-color: #fff;
+		margin-top: 0px;
+		text-indent: 6px;
+	}
+	#wst-tabs .l-tab-links ul{
+		margin-top: 12px;
+	}
+	#wst-tabs .l-tab-links{
+		height: 50px ;
+	}
+	.layui-layer{ border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;overflow: hidden;}
+	select,option{height: 38px;line-height: 38px;width: 80px;}
+	input[type="text"]{padding: 0px;height: 28px;}
+	td{line-height: 28px}
+	input[type="checkbox"]{vertical-align: top;}
+	.bianji,.kucun,.shanchux{color: #069add;margin:0px 10px;cursor:pointer;}
+	.biaoge_p{margin: 0px ;padding: 0px;line-height: 28px;margin:auto;margin-top: 8px;width: 385px;display: block;}
+	.biaoge_p1{margin: 0px ;padding: 0px;line-height: 28px;margin:auto;margin-top: 8px;width: 660px;display: block;}
+	.biaoge_p .biaoti{display: inline-block;width: 75px;text-align: right;vertical-align: top;}
+	.biaoge_p .changdu1{width: 120px;}
+	.biaoge_p .changdu2{width: 200px;}
+	.biaoge_p .changdu3{width: 290px;}
+	.biaoge_p .changdu4{width:370px;display: inline-block;}
+	.layui-layer-btn {padding-right: 26px;}
+	.l-text-wrapper{display: inline-block;}
+	.biaoge_p select,.biaoge_p option{height: 28px;line-height: 28px;}
+	.l-box-dateeditor{z-index: 999999999;}
+	
+	#tongji td{padding: 5px 15px;}
+	#tongji tr:nth-child(odd){background: #f1f1f1;}
+	#tongji tr:nth-child(even){background: #e6e6e6;}
+	#tongji tr:hover{background: #63e89F;}
+	
+	#shouru,#zhichu{width: 500px;height: 400px;margin-left: 150px;border: 1px solid #f3a163;float: left;margin-top: 20px;padding: 10px;}
+</style>
+<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+<div class="l-loading" style='display:block' id="wst-loading"></div>
+<div id="wst-tabs" style="width:100%; height:100%;overflow: hidden; border: 1px solid #D3D3d3;" class="liger-tab">
+	<!--
+    	作者：1351661878@qq.com
+    	时间：2017-04-13
+    	描述：第一个页面
+    -->
+	<div id="users" tabId="users" title="账户管理" class='wst-tab' style="height: 99%">
+		<div class="wst-toolbar">
+			<button class="tianjia" onclick="javascript:toEditA(0,0)">添加</button>
+			<button class="shanchu" onclick="javascript:toBatchDelA(0,0)" >删除</button>
+			<!--<select name="">
+				<option value="">供应商</option>
+				<option value=""></option>
+			</select>
+			<select name="">
+				<option value="">仓库</option>
+				<option value=""></option>
+			</select>
+			操作日期：
+			<input type="text" style="margin:0px;vertical-align:baseline;" id="startDateA" name="startDateA" class="ipt" maxLength="20"  />
+			至
+			<input type="text" style="margin:0px;vertical-align:baseline;" id="endDateA" name="endDateA" class="ipt" maxLength="20"  />
+			<input type='text' id='key2' placeholder='账号/店铺名称' />
+			<button class="btn btn-blue" onclick="javascript:loadShopGrid(0)">查询</button>-->
+		</div>
+		<div id='userGrid'></div>
+	</div>
+	<!--
+    	作者：1351661878@qq.com
+    	时间：2017-04-13
+    	描述：第二个页面
+    -->
+	<div id="shops" tabId="shops" title="财务明细" class='wst-tab' style="height: 99%">
+		<div class="wst-toolbar">
+			<button class="tianjia"  onclick="javascript:toEditB(1,0)">收入</button>
+			<button class="tianjia"  onclick="javascript:toEditB(2,0)">支出</button>
+			<button class="tianjia"  onclick="javascript:toEditB2(3,0)" >内部转账</button>
+			<!--<button class="tianjia" onclick="javascript:getForEditB(0,0)">添加</button>-->
+			<button class="shanchu" onclick="javascript:toBatchDelB(0,0)" >删除</button>
+			<select name="s2_type" id="s2_type" class="s2_ipt"  >
+				<option value="0">类型</option>
+				<option value="1">收入</option>
+				<option value="2">支出</option>
+				<option value="3">内部转账</option>
+			</select>
+			<select name="s2_types" id="s2_types" class="s2_ipt">
+				<option value="0">财务类别</option>
+				{volist name="res1" id="vo" }
+				<option value="{$vo.id}">{$vo.name}</option>
+				{/volist}
+				
+			</select>
+			<!-- <select name="">
+				<option value="">仓库</option>
+				<option value=""></option>
+			</select> -->
+			操作日期：
+			<input type="text" style="margin:0px;vertical-align:baseline;" id="startDateB" name="startDateB" class="s2_ipt" maxLength="20"  />
+			至
+			<input type="text" style="margin:0px;vertical-align:baseline;" id="endDateB" name="endDateB" class="s2_ipt" maxLength="20"  />
+			<input type='text' name="s2_key" id='s2_key' class="s2_ipt" placeholder='单号' />
+			<button class="btn btn-blue" onclick="javascript:loadShopGrids2(0)">查询</button>
+		</div>
+		<div id='shopGrid'></div>
+	</div>
+	<!--
+    	作者：1351661878@qq.com
+    	时间：2017-04-13
+    	描述：第三个
+    -->
+	<div id="shopsx" tabId="shopsx" title="财务类别" class='wst-tab' style="height: 99%">
+		<div class="wst-toolbar">
+			<button class="tianjia" onclick="javascript:toEditC(0,0)">添加</button>
+			<button class="shanchu" onclick="javascript:toBatchDelC(0,0)" >删除</button>
+			<select name="s3_type" id="s3_type" class="s3_ipt"  >
+				<option value="0">类型</option>
+				<option value="1">收入</option>
+				<option value="2">支出</option>
+				<option value="3">内部转账</option>
+			</select>
+			<!--<select name="">
+				<option value="">仓库</option>
+				<option value=""></option>
+			</select>-->
+			<input type='text' id='s3_key' class="s3_ipt" name="s3_key"  placeholder='名称' />
+			<button class="btn btn-blue" onclick="javascript:loadShopGrids3(0)">查询</button>
+		</div>
+		<div id='shopGridx'></div>
+	</div>
+	<!--
+    	作者：1351661878@qq.com
+    	时间：2017-04-13
+    	描述：第四个
+    -->
+	<div id="shopsy" tabId="shopsy" title="财务统计" class='wst-tab' style="height: 99%">
+		<div class="wst-toolbar">
+			操作日期：
+			<input type="text" style="margin:0px;vertical-align:baseline;" id="startDateD" name="startDateD" class="s4_ipt" maxLength="20"  />
+			至
+			<input type="text" style="margin:0px;vertical-align:baseline;" id="endDateD" name="endDateD" class="s4_ipt" maxLength="20"  />
+			<button class="btn btn-blue" onclick="javascript:loadShopGrids4(0)">查询</button>
+		</div>
+		<div id='shopGridy' style="width: 100%;overflow: scroll;">
+			<table id="tongji" border="" cellspacing="" cellpadding="">
+				<tr>
+					<td>类型</td>
+					<td>本周</td>
+					<td>本月</td>
+					<td>本年</td>
+					<td>筛选</td>
+				</tr>
+			</table>
+			<div style="margin-top: 50px;">
+				<div id="zhichu"></div>
+				<div id="shouru"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--
+	作者：1351661878@qq.com
+	时间：2017-04-14
+	描述：第一个
+-->
+<div id='expressBoxA' style='display:none'>
+    <form id='expressFormA' autocomplete="off">
+    <input type="hidden" />
+	    <p class="biaoge_p">
+	    	<span class="biaoti">名称<font color='red'>*</font>：</span>
+	    	<input type='text' id='name' name="name"  class='ipta changdu3' maxLength='20'/>
+	    </p>
+	    <p class="biaoge_p">
+	    	<span class="biaoti">账号<font color='red'>*</font>：</span>
+	    	<input type='text' id='number' name="number"  class='ipta changdu3' maxLength='20'/>
+	    </p>
+	    <p class="biaoge_p">
+	    	<span class="biaoti">账号名称<font color='red'>*</font>：</span>
+	    	<input type='text' id='account_name' name="account_name"  class='ipta changdu3' maxLength='20'/>
+	    </p>
+	    <!-- <p class="biaoge_p">
+	    	<span class="biaoti">支付代码<font color='red'>*</font>：</span>
+	    	<input type='text' id='expressName' name="expressName"  class='ipt changdu3' maxLength='20'/>
+	    </p> -->
+	    <!-- <p class="biaoge_p">
+	    	<span class="biaoti"></span>
+	    	与"支付方式"，"在线支付"代码相对应
+	    </p> -->
+	    <p class="biaoge_p">
+	    	<span class="biaoti">排序<font color='red'>*</font>：</span>
+	    	<input type='text' id='sort' name="sort"  class='ipta changdu3' maxLength='20'/>
+	    </p>
+    </form>
+ </div>
+<!--
+	作者：1351661878@qq.com
+	时间：2017-04-14
+	描述：第er个
+-->
+<div id='expressBoxB' style='display:none'>
+    <form id='expressFormB' autocomplete="off">
+    <input type="hidden" />
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">单号<font color='red'>*</font>：</span>
+	    	<input type='text' id='number' name="number"  class='iptb1 changdu1 number' maxLength='20'/>
+	    	<span style="width: 330px;float: right;">
+	    		<span class="biaoti">类型<font color='red'>*</font>：</span>
+	    		<span id="leixing_x"></span>
+	    		<input type="hidden" name="type" id="type" class="iptb1" value="" />
+	    	</span>
+	    </p>
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">客户名称<font color='red'>*</font>：</span>
+	    	<input type='text' id='name' name="name"  class='iptb1 changdu1' maxLength='20'/>
+	    	<span style="width: 330px;float: right;">
+	    		<span class="biaoti">财务类型<font color='red'>*</font>：</span>
+	    		<select id="account_type" name="account_type" class="iptb1 account_type1">
+	    			
+	    		</select>
+	    	</span>
+	    </p>
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti"><span id="ss_ylf">收</span>款金额<font color='red'>*</font>：</span>
+	    	<input type='text' id='money' class="iptb1" name="money"  class='iptb1 changdu1' maxLength='20'/>
+	    	<span style="width: 330px;float: right;">
+	    		<span class="biaoti"><span id="ff_ylf">收</span>款银行<font color='red'>*</font>：</span>
+	    		<span class="bank"></span>
+	    			
+	    		
+	    	</span>
+	    </p>
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">状态<font color='red'>*</font>：</span>
+	    	<select id="status" name="status" class="iptb1">
+	    		<option value="1">待确认</option>
+	    		<option value="2">已确认</option>
+	    	</select>
+	    	<span style="width: 330px;float: right;">
+	    		<span class="biaoti">发票号码<font color='red'>*</font>：</span>
+	    		<input type='text' id='invoice' name="invoice"  class='iptb1 changdu1' maxLength='20'/>
+	    	</span>
+	    </p>
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">经手人<font color='red'>*</font>：</span>
+	    	<select id="operator" name="operator" class="iptb1">
+	    		<option value="0">请选择</option>
+	    		{volist name="operator" id="vos" }
+				<option value="{$vos.staffId}">{$vos.staffName}</option>
+				{/volist}
+	    	</select>
+	    	<span style="width: 330px;float: right;">
+	    		<span class="biaoti">收款日期<font color='red'>*</font>：</span>
+	    		<input type='text' id='time' name="time"  class='iptb1 changdu1' maxLength='20'/>
+	    	</span>
+	    </p>
+	    
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">备注<font color='red'>*</font>：</span>
+	    	<textarea class="changdu3 iptb1" style="height: 80px;resize: none;" id="remark" name="remark"></textarea>
+	    </p>
+    </form>
+ </div>
+ 
+ 
+<div id='expressBoxB2' style='display:none'>
+    <form id='expressFormB2' autocomplete="off">
+    <input type="hidden" />
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">单号<font color='red'>*</font>：</span>
+	    	<input type='text' id='number' name="number"  class='iptb2 changdu1 number' disabled="disabled" maxLength='20'/>
+	    	<span style="width: 330px;float: right;">
+	    		<span class="biaoti">类型<font color='red'>*</font>：</span>
+	    		<span id="leixing_x">内部转账</span>
+	    		<input type="hidden" name="type" id="type" class="iptb2" value="3" />
+	    	</span>
+	    </p>
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">转入银行<font color='red'>*</font>：</span>
+	    		<span class="bank1"></span>
+	    	<span style="width: 330px;float: right;">
+	    		<span class="biaoti">转出银行<font color='red'>*</font>：</span>
+	    		<span class="bank2"></span>
+	    	</span>
+	    </p>
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti"><span id="ss_ylf">收</span>款金额<font color='red'>*</font>：</span>
+	    	<input type='text' id='money' name="money"  class='iptb2 changdu1' maxLength='20'/>
+	    </p>
+	   
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">经手人<font color='red'>*</font>：</span>
+	    	<select id="operator" name="operator" class="iptb2">
+	    		<option value="0">请选择</option>
+	    		{volist name="operator" id="vos" }
+				<option value="{$vos.staffId}">{$vos.staffName}</option>
+				{/volist}
+	    	</select>
+	    	<span style="width: 330px;float: right;">
+	    		<span class="biaoti">收款日期<font color='red'>*</font>：</span>
+	    		<input type='text' id='time' name="time"  class='iptb2 time1 changdu1' maxLength='20'/>
+	    	</span>
+	    </p>
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">状态<font color='red'>*</font>：</span>
+	    	<select id="status" name="status" class="iptb2">
+	    		<option value="1">待确认</option>
+	    		<option value="2">已确认</option>
+	    	</select>
+	    </p>
+	    <p class="biaoge_p biaoge_p1">
+	    	<span class="biaoti">备注<font color='red'>*</font>：</span>
+	    	<textarea class="changdu3 iptb2" style="height: 80px;resize: none;" id="remark" name="remark"></textarea>
+	    </p>
+    </form>
+ </div>
+<!--
+	作者：1351661878@qq.com
+	时间：2017-04-14
+	描述：第san个
+-->
+<div id='expressBoxC' style='display:none'>
+    <form id='expressFormC' autocomplete="off">
+    <input type="hidden" />
+	    <p class="biaoge_p">
+	    	<span class="biaoti">客户名称<font color='red'>*</font>：</span>
+	    	<input type='text' id='name' name="name"  class='iptc changdu2' maxLength='20'/>
+	    </p>
+	    <p class="biaoge_p">
+	    	<span class="biaoti ">类型<font color='red'>*</font>：</span>
+	    	<input class="iptc" type="radio" name="type" id="ss1" value="1"/><label for="ss1">收入</label>
+	    	<input class="iptc" type="radio" name="type" id="ss2" value="2"/><label for="ss2">支出</label>
+	    	<input class="iptc" type="radio" name="type" id="ss2" value="3"/><label for="ss2">内部转账</label>
+	    </p>
+	    <p class="biaoge_p">
+	    	<span class="biaoti">排序序号<font color='red'>*</font>：</span>
+	    	<input type='text' id='sort' name="sort"  class='iptc changdu1' maxLength='20'/>
+	    </p>
+    </form>
+ </div>
+<!--
+	作者：1351661878@qq.com
+	时间：2017-04-14
+	描述：第si个
+-->
+<div id='expressBoxD' style='display:none'>
+    <form id='expressFormD' autocomplete="off">
+    <input type="hidden" />
+    	<p class="biaoge_p">
+	    	单号：1545454545
+	    	<span style="float: right;">
+	    		最后编辑：sdsdsds
+	    	</span>
+	    </p>
+	    <p class="biaoge_p">
+	    	<span class="biaoti">调入仓库<font color='red'>*</font>：</span>
+	    	<select name="">
+	    		<option value="">2315</option>
+	    	</select>
+	    	<span class="biaoti">经手人<font color='red'>*</font>：</span>
+	    	<select name="">
+	    		<option value="">2315</option>
+	    	</select>
+	    	<span class="biaoti">供应商<font color='red'>*</font>：</span>
+	    	<select name="">
+	    		<option value="">2315</option>
+	    	</select>
+	    </p>
+	    <p class="biaoge_p">
+	    	<span class="biaoti">日期<font color='red'>*</font>：</span>
+	    	<input type="text" style="margin:0px;vertical-align:baseline;" id="timeD" name="timeD" class="ipt" maxLength="20"  />
+	    	<span class="biaoti">备注<font color='red'>*</font>：</span>
+	    	<input type='text' id='expressName' name="expressName"  class='ipt changdu1' maxLength='20'/>
+	    </p>
+    </form>
+ </div>
+
+ 
+{/block}

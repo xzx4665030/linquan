@@ -1,0 +1,101 @@
+{extend name="default/shops/base" /}
+{block name="title"}订单详情 - 卖家中心{__block__}{/block}
+{block name="css"}
+{/block}
+{block name="content"}
+<style type="text/css">
+	.order-box .log-box .state2 p{
+		width: 225px;
+	}
+	.order-box .goods-head .goods,.order-box .item .goods {
+		width: 490px;
+	}
+	.order-box .item .t-price,.order-box .goods-head .t-price{
+		width: 160px;
+	}
+	.order-box .item .t-price,.order-box .item .num{height: 80px;line-height: 80px;}
+	.order-box .goods-head .price,.order-box .item .price{
+		width: 220px;
+	}
+	.order-box .item .price,.order-box .item .goods .name{height: 80px;line-height: 40px;}
+</style>
+<div class="wst-shop-head"><span>订单详情</span><a href="javascript:history.go(-1)">返回</a></div>
+<div class='wst-content'>
+   <div class='order-box'>
+    <div class='box-head'>日志信息</div>
+	<div class='log-box'>
+<div class="state">
+<div class="icon">
+	<span class="icons icon13"></span>
+</div>
+<div class="arrow {if condition="($object['call_status']>1)"} arrow2 {/if}">························></div>
+<div class="icon">
+	<span class="icons {if condition="($object['call_status']>1)"}icon43 {else}icon41  {/if}"></span>
+</div>
+
+<div class="arrow {if condition="($object['call_status']>2)"} arrow2 {/if}">························></div>
+<div class="icon"><span class="icons {if condition="($object['call_status']==3)"}icon53 {else}icon51 {/if}"></span></div>
+</div>
+   <div class="state2">
+   <p style="color: #04BD3D;">订单待发货</p><p style="color: {if condition="($object['call_status']>1)"}#04BD3D {else}#e3132c {/if}">订单{if condition="($object['call_status']>1)"}已 {else}未{/if}发货</p><p style="color: {if condition="($object['call_status']>2)"}#04BD3D {else}#e3132c {/if}">订单{if condition="($object['call_status']>2)"}已 {else}未{/if}完成</p>
+   </div>
+   <div class="wst-clear"></div>
+   </div>
+        <div>
+          <table class='log'>
+             <tr>
+               <td></td>
+               <td></td>
+             </tr>
+          </table>
+        </div>                 
+   </div>
+   
+  
+   <!-- 商品信息 -->
+   <div class='order-box'>
+       <div class='box-head'>商品清单</div>
+       <div class='goods-head'>
+          <div class='goods'>商品</div>
+          <div class='t-price'>挑拨仓库</div>
+          <div class='num'>数量</div>
+          <div class='price'>单价</div>
+       </div>
+       <div class='goods-item'>
+          <div class='shop'>
+          
+          <a href="">
+			  <img border="0" src="http://wpa.qq.com/pa?p=1:1030890571:7" alt="QQ交谈" width="71" height="24" />
+		  </a>
+          
+          </div>
+          <div class='goods-list'>
+             
+             <div class='item'>
+		         <div class='goods'>
+		            <div class='img'>
+		                <a href='' target='_blank'>
+			            <img src='__ROOT__/{$object['goodsImg']}' width='80' height='80' title=''/>
+			            </a>
+		            </div>
+		            <div class='name'>商品名称：{$object['goodsName']}
+		            <br />
+		            商品规格：{$object['spec']}
+		            </div>
+		            
+		         </div>
+		         <div class='t-price'>仓库来源:{$object['start_name']}</div>
+		         <div class='num'>{$object['goodsNum']}</div>
+		         <div class='price'>单个商品进价金额：¥{$object['marketPrice']}<br/>单个商品售价金额：¥{$object['shopPrice']}</div>
+		         <div style="clear: both;"></div>
+             </div>
+             
+          </div>
+       </div>
+      
+   </div>
+</div>
+{/block}
+{block name="js"}
+<script type='text/javascript' src='__STYLE__/shops/orders/orders.js?v={$v}'></script>
+{/block}

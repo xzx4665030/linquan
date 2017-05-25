@@ -1,0 +1,167 @@
+{extend name="default/shops/base" /}
+{block name="title"}库存预警 - 卖家中心{__block__}{/block}
+{block name="css"}
+{/block}
+{block name="content"}
+<div class="wst-shop-head"><span>库存预警</span></div>
+<div class="wst-shop-tbar">
+  <label>
+    商品分类：
+    <select name="cat1" id="cat1" onchange="getCat(this.value)" class="s-query">
+        <option value="">-请选择-</option>
+      {volist name=":WSTShopCats(0)" id="vo"}
+            <option value="{$vo['catId']}" >{$vo['catName']}</option>
+      {/volist}
+    </select>
+    <select name="cat2" id="cat2" class="s-query"><option value="">-请选择-</option></select>
+    <a class="s-btn" onclick="stockByPage()" style='margin-top:5px;'>查询</a>
+  </label>
+</div>
+<div class="wst-shop-content">
+   <table class='wst-list'>
+   <thead>
+   <tr>
+     <th width="220">商品名称</th>
+     <th>货号</th>
+     <th>规格</th>
+     <th width="130">库存<font color='red'>(红色双击编辑)</font></th>
+     <th width="130">预警<font color='red'>(红色双击编辑)</font></th>
+     <th width="120">操作</th>
+   </tr>
+   </thead>
+   <tbody id='list'></tbody>
+   <tfoot>
+     <tr align="center"><td colspan='10' id='pager' align="center" style='padding:5px 0px 5px 0px'></td></tr>
+   </tfoot>
+   <script id="tblist" type="text/html">
+   {{# for(var i = 0; i < d.length; i++){ }}
+   <tr>
+      {{# if(d[i]['isSpec']==1) { }}
+      <td>
+          <div class="goods-img">
+          <a href="{{WST.U("home/goods/detail","id="+d[i]['goodsId']+"&key="+d[i]['verfiycode'])}}">
+            <img class='j-goodsImg'  data-original='__ROOT__/{{d[i].goodsImg}}'/>
+          </a>
+        </div>
+        <p class="goodsName">
+          {{WST.cutStr(d[i]['goodsName'],43)}}
+        </p>
+      </td>
+        <td>{{d[i]['productNo']}}</td>
+		<td>
+		<span class="spec">
+		{{# for(var s = 0; s < d[i].spec.length; s++){ }}
+			{{d[i].spec[s]['catName']}}：{{d[i].spec[s]['itemName']}};
+		{{# } }}
+		</span>
+		</td>
+		<td width="40" ondblclick="javascript:toEditGoodsStock({{d[i]['id']}},1)">
+        <input id="ipt_1_{{d[i]['id']}}" onkeyup="javascript:WST.isChinese(this,1)" onkeypress="return WST.isNumberKey(event)" onblur="javascript:editGoodsStock({{d[i]['id']}},1,{{d[i]['goodsId']}})" class="stockin" maxlength="6"/>
+        <span id="span_1_{{d[i]['id']}}" style="display: inline;cursor:pointer;color:#f30505;">{{d[i]['goodsStock']}}</span>
+        </td>
+		<td width="40" ondblclick="javascript:toEditGoodsStock({{d[i]['id']}},2)">
+        <input id="ipt_2_{{d[i]['id']}}" onkeyup="javascript:WST.isChinese(this,1)" onkeypress="return WST.isNumberKey(event)" onblur="javascript:editGoodsStock({{d[i]['id']}},2,{{d[i]['goodsId']}})" class="stockin" maxlength="6"/>
+        <span id="span_2_{{d[i]['id']}}" style="display: inline;cursor:pointer;color:#f30505;">{{d[i]['warnStock']}}</span>
+        </td>
+      <td>
+      	<a class="g-handle" href='javascript:toEdit({{d[i]['goodsId']}},"sale")'>编辑</a>
+      	{{#if(d[i]['is_transfer']==1){}}
+        <a class="g-handle" href='javascript:buhuo({{d[i]['goodsId']}},"1")'>补货</a>
+        <a class="g-handle" href='javascript:buhuo({{d[i]['goodsId']}},"2")'>退货</a>
+        {{#}else{}}
+        {{#}}}
+      	
+      </td>
+      {{# }else{ }}
+      <td>
+          <div class="goods-img">
+          <a href="{{WST.U("home/goods/detail","id="+d[i]['goodsId']+"&key="+d[i]['verfiycode'])}}">
+            <img class='j-goodsImg'  data-original='__ROOT__/{{d[i].goodsImg}}'/>
+          </a>
+        </div>
+        <p class="goodsName">
+          {{WST.cutStr(d[i]['goodsName'],43)}}
+        </p>
+      </td>
+		<td>{{d[i]['productNo']}}</td>
+		<td>无</td>
+      {{# if(d[i]['goodsType']==0){ }}
+		  <td width="40" ondblclick="javascript:toEditGoodsStock({{d[i]['goodsId']}},3)">
+        <input id="ipt_3_{{d[i]['goodsId']}}" onkeyup="javascript:WST.isChinese(this,1)" onkeypress="return WST.isNumberKey(event)" onblur="javascript:editGoodsStock({{d[i]['goodsId']}},3)" class="stockin" maxlength="6"/>
+        <span id="span_3_{{d[i]['goodsId']}}" style="display: inline;cursor:pointer;color:#f30505;">{{d[i]['goodsStock']}}</span>
+        </td>
+		  <td width="40" ondblclick="javascript:toEditGoodsStock({{d[i]['goodsId']}},4)">
+        <input id="ipt_4_{{d[i]['goodsId']}}" onkeyup="javascript:WST.isChinese(this,1)" onkeypress="return WST.isNumberKey(event)" onblur="javascript:editGoodsStock({{d[i]['goodsId']}},4)" class="stockin" maxlength="6"/>
+        <span id="span_4_{{d[i]['goodsId']}}" style="display: inline;cursor:pointer;color:#f30505;">{{d[i]['warnStock']}}</span>
+        </td>
+        {{# }else{ }}
+        <td width="40">{{d[i]['goodsStock']}}</td>
+        <td width="40">{{d[i]['warnStock']}}</td>
+        {{#}}}
+        <td>
+        {{#if(d[i]['goodsType']==1){}}
+        <a class="g-handle" href='javascript:toStock({{d[i]['goodsId']}},"stockWarnByPage")'>[进入卡券编辑]</a>
+        {{#}else{}}
+        <a class="g-handle" href='javascript:toEdit({{d[i]['goodsId']}},"sale")'>[进入商品编辑]</a>
+        {{#}}}
+        </td>
+      
+      {{# } }}
+   </tr>
+   {{# } }}
+   </script>
+  </table> 
+</div>
+<style type="text/css">
+	.ylf_yc{position: fixed;top: 0px;left: 0px;width: 100%;height: 100%;display: none;color: #858585;}
+	.ylf_yc_b{width: 100%;height: 100%;background-color: rgba(190,190,190,0.6);}
+	.ylf_yc_t{position: fixed;width: 700px;left: 50%;top: 50%;margin-top:-250px ;margin-left: -350px;background: #fff; border-radius:12px ; -moz-border-radius:12px;-webkit-border-radius:12px;overflow: hidden;}
+	.ylf_bt{text-indent: 20px;height: 56px;line-height: 56px;background-color: #f8f8f8;border-bottom:1px solid #858585 ;font-size: 16px;}
+	.ylf_div{margin: 20px 40px 25px 15px;font-size: 14px;}
+	.ylf_div p{height: 40px;line-height: 40px;margin: 10px 0px;}
+	.ylf_yc a{cursor: pointer;}
+	.ylf_div .ylf_span{display: inline-block;width: 60px;vertical-align: top;text-align: right;margin-right: 10px;height: 40px;line-height: 40px;}
+	.ylf_div textarea{resize:none;width: 560px;height: 75px;}
+	#ylf_pe{margin-right: 30px;}
+	#ylf_ge span{margin-right: 15px;}
+	.ylf_an{margin: 25px;text-align: right;}
+	.ylf_an a{display: inline-block;padding: 5px 15px;border-radius:5px ; -moz-border-radius:5px;-webkit-border-radius:5px;margin-right: 20px;}
+	.ylf_an .ylf_queren{color: #fff;background: #e92e25;}
+	.ylf_an .ylf_quxiao{color: #7e7e7e;background: #f0f0f0;}
+</style>
+<div class="ylf_yc">
+	<div class="ylf_yc_b"></div>
+	<div class="ylf_yc_t ddd">
+		<p  class="ylf_bt sss"><span  class="ylf_bt_x">退货权限</span><a></a></p>
+		<div class="ylf_div">
+			<form>
+				<p class="ylf_p">
+					<span class="ylf_span">网点:</span>
+					<span id="ylf_wd">123店铺</span>
+				</p>
+				<p>
+					<span class="ylf_span">申请人:</span><span id="ylf_pe"></span>
+					<span class="ylf_span ylf_sl_x">退货数量:</span><input id="ylf_sl" type="text" />
+				</p>
+				<p>
+					<span class="ylf_span">退货商品:</span><span id="ylf_sp"></span>
+				</p>
+				<p>
+					<span class="ylf_span">规格:</span><span id="ylf_ge"></span>
+				</p>
+				<div>
+					<span class="ylf_span">备注:</span><textarea id="beizhu"></textarea>
+				</div>
+			</form>
+		</div>
+		<div class="ylf_an">
+			<a class="ylf_queren">确认</a>
+			<a class="ylf_quxiao">取消</a>
+		</div>
+	</div>
+</div>
+{/block}
+{block name="js"}
+<script type='text/javascript' src='__STYLE__/shops/stockwarn/stockwarn.js?v={$v}'></script>
+<script type='text/javascript' src='__STYLE__/shops/stockwarn/tuozhuai.js?v={$v}'></script>
+{/block}

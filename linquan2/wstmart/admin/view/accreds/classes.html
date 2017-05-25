@@ -1,0 +1,131 @@
+{extend name="base" /}
+{block name="js"}
+<script src="__ADMIN__/js/wstgridtree.js?v={$v}" type="text/javascript"></script>
+<script src="__ADMIN__/accreds/accreds_lf.js?v={$v}" type="text/javascript"></script>
+<!--<script src="__ADMIN__/js/jquery-1.7.2.min.js" type="text/javascript"></script>-->
+
+{/block}
+{block name="main"}
+<style>
+	.kongge{display:inline-block;width:20px;}
+</style>
+<div class="l-loading" style="display: block" id="wst-loading"></div>
+
+<div class="wst-toolbar">
+   <a class="btn btn-green f-right"  onclick="javascript:toEditA(0)">新增</a>
+   <div style='clear:both'></div>
+</div>
+
+<!--<table>
+ 	<tr>
+		<td>序号</td> 
+		<td>行业分类名称</td>
+		<td>操作</td>
+	</tr>
+	{empty name="list"}
+		<span>暂时还没有行业分类</span>
+	{else /}
+		{volist name="list" id="li" key="k"}
+			<tr>
+				<td>{$k}</td>
+				<td>{$li.class_name}</td>
+				<td>
+					<a href="javascript:toEdits({$li.class_id});">修改</a>
+					<a href="javascript:toDels({$li.class_id})">删除</a>
+				</td>
+			</tr>
+		{/volist}
+	{/empty}
+
+</table> -->
+
+<div id="maingrid"></div>
+<div id='expressBoxA' style='display:none'>
+	<form id='expressFormA' autocomplete="off" >
+		<table class='wst-form wst-box-top' style="width: 92%;margin: auto;">
+	     <tr>
+	        <th width='100'>行业分类名称<font color='red'>*</font>：</th>
+	        <td><input type='text' id='class_name' name="class_name" class='ipt' maxLength='20' style='width:200px;'/></td>
+	     </tr>
+	
+	     
+	     <tr>
+	        <th width='100'>是否显示<font color='red'>*</font>：</th>
+	        <td><input  class="ipt" type="radio" name="show" value='1' checked="checked">显示<input  class="ipt" type="radio" name="show" value="0">隐藏</td>
+	     </tr>
+	     <tr>
+	        <th style="vertical-align: top;">经营范围<font color='red'>*</font>：</th>
+	        <td>
+	            {volist name='cats' id='val'}<span style="display: inline-block;width: 180px"><input class="asd ipt" type="checkbox" name="cats_id" value="{$val.catId}">{$val.catName}</span>{/volist}
+	        </td> 	
+	     </tr> 
+	  </table>
+	</form>
+</div>
+<script>
+
+//	$(function(){
+//		$(".btn").click(function(){
+//			$("#goodscatsBox").show();
+//		})
+//		
+//		$("#tj").click(function(){
+//			var name = $("#catName").val();
+//			var show = $("#show").val();
+//			var k="";
+//			$('.asd').each(function(){
+//				if($(this).is(':checked')){
+//
+//					k=k+$(this).val()+",";
+//				}
+//
+//			})
+//			
+//			
+//			data = {'data':name,'show':show,'cats_id':k};
+//			$.ajax({
+//				type:'post',
+//				url:WST.U('admin/accreds/add_classes'),
+//				data:data,
+//				dataType:'json',
+//				success:function(e){
+//					if(e.flag == 1){
+//						WST.msg('添加成功');
+//						window.location.reload();
+//					}else{
+//						WST.msg('添加失败');
+//						window.location.reload();
+//					}
+//				}
+//				
+//			})
+//		})
+//	})
+</script>
+
+
+<!--<script type="text/javascript">
+	function toEdits(id){
+	   location.href=WST.U('admin/Accreds/toEdits','id='+id);
+    }
+
+    function toDels(id){
+       var box = WST.confirm({content:"您确定要删除该记录吗?",yes:function(){
+       	   var params = {id:id};
+		   $.post(WST.U('admin/Accreds/toDels'),params,function(data,textStatus){
+		   	layer.close(box);
+		      if(data == 1){
+					WST.msg("删除成功",{icon:1}); 
+					window.location.reload();   	    
+				}else{
+					WST.msg('删除失败');
+					window.location.reload();
+			   }
+	    	});
+	   }});
+    }
+</script>-->
+<script>
+  $(function(){initGrid()});
+</script>
+{/block}
